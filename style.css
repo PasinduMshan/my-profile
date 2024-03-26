@@ -1,0 +1,52 @@
+body {
+    background-color: #070508;
+}
+
+header {
+    width: 100vw;
+    height: 13vh;
+    position: fixed;
+    background-color: #070508;
+    top: 0;
+}
+
+header>img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+}
+
+header>nav {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+}
+
+header>nav>ul {
+    padding: 0;
+    margin: 0;
+}
+
+header>nav>ul>li {
+    display: inline-block;
+    width: fit-content;
+}
+
+header>nav>ul>li>a {
+    font-size: 22px;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+header>nav>ul>li>a:hover {
+    color: #00e5ff;
+    box-shadow: rgba(0, 229, 255, 1) 0px 20px 30px -10px;
+}
