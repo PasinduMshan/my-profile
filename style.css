@@ -8,6 +8,7 @@ header {
     position: fixed;
     background-color: #070508;
     top: 0;
+    z-index: 1000;
 }
 
 header>img {
@@ -49,4 +50,84 @@ header>nav>ul>li>a {
 header>nav>ul>li>a:hover {
     color: #00e5ff;
     box-shadow: rgba(0, 229, 255, 1) 0px 20px 30px -10px;
+}
+
+#MainHeroSection {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#heroNameDetail{
+    position: absolute;
+    top: 35vh;
+    left: 8vw;
+    font-family: Arial;
+    color: white;
+}
+
+#heroNameDetail>h3 {
+    font-size: 45px;
+    margin: 5px;
+}
+
+#heroNameDetail>h2 {
+    font-size: 65px;
+    color: #00e5ff;
+    margin: 5px;
+}
+
+#heroNameDetail>p {
+    font-size: 20px;
+    margin: 5px;
+}
+
+#heroSocialPic {
+    position: absolute;
+    top: 65vh;
+    left: 8vw;
+}
+
+.socialPicStyle {
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+}
+
+.socialPicStyle:hover {
+    border: 2px solid #00e5ff;
+    border-radius: 100%;
+    box-shadow: rgba(0, 229, 255, 1) 0px 2px 4px 0px, rgba(0, 229, 255, 0.50) 0px 2px 16px 0px;
+}
+
+#mainPic{
+    position: absolute;
+    bottom: 0;
+    right: 3vw;
+}
+
+#mainPic>img {
+    width: 650px;
+    height: 650px;
+}
+
+#downloadCVBtn {
+    position: absolute;
+    bottom: 10vh;
+    left: 8vw;
+}
+
+#downloadCVBtn>button {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #00e5ff;
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 22px;
+    border: #00e5ff;
+}
+
+#downloadCVBtn>button:hover {
+    box-shadow: rgba(0, 229, 255, 0.22) 0px 2px 4px 0px, rgba(0, 229, 255, 0.37) 0px 2px 16px 0px;
 }
