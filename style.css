@@ -2,6 +2,8 @@ body {
     background-color: #070508;
 }
 
+/* header */
+
 header {
     width: 100vw;
     height: 13vh;
@@ -52,10 +54,11 @@ header>nav>ul>li>a:hover {
     box-shadow: rgba(0, 229, 255, 1) 0px 20px 30px -10px;
 }
 
+/*Hero Section*/
+
 #MainHeroSection {
     width: 100vw;
     height: 100vh;
-
 }
 
 #heroNameDetail{
@@ -130,4 +133,97 @@ header>nav>ul>li>a:hover {
 
 #downloadCVBtn>button:hover {
     box-shadow: rgba(0, 229, 255, 0.22) 0px 2px 4px 0px, rgba(0, 229, 255, 0.37) 0px 2px 16px 0px;
+}
+
+/*About Me Section*/
+
+#aboutMeSection {
+    width: 100vw;
+    height: 100vh;
+}
+
+#aboutMeTitle {
+    font-size: 3.5rem;
+    color: white;
+    position: absolute;
+    top: 107vh;
+    left: 5vw;
+    -webkit-text-stroke: 1px #00B8D4;
+}
+
+#aboutMeImageDiv {
+    width: 19.5vw;
+    height: 60.5vh;
+    border-radius: 25px;
+    position: relative;
+    top: 28vh;
+    left: 8vw;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+20,2989d8+50,1e5799+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100 */
+    background: linear-gradient(45deg,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+#aboutMeImageDiv:hover {
+    box-shadow: rgba(0, 229, 255, 0.1) 0px 4px 16px, rgba(0, 229, 255, 0.1) 0px 8px 24px, rgba(0, 229, 255, 0.1) 0px 16px 56px;
+}
+
+#aboutMeImage {
+    width: 18vw;
+    height: 58vh;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#horizontalLine {
+    width: 0.8vw;
+    height: 35vh;
+    background-color: #00e5ff;
+    border-radius: 10px;
+    position: absolute;
+    left: 46vw;
+    top: 140vh;
+    box-shadow: rgba(0, 229, 255, 0.1) 0px 4px 16px, rgba(0, 229, 255, 0.1) 0px 8px 24px, rgba(0, 229, 255, 0.1) 0px 16px 56px;
+}
+
+#aboutMePara {
+    width: 40vw;
+    height: 20vh;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50vw;
+    top: 145vh ;
+}
+
+/* Skill Section */
+
+#skillSection {
+    width: 100vw;
+    height: 100vh;
+}
+
+#skillTitle {
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 207vh;
+    left: 5vw;
+    -webkit-text-stroke: 1px #00B8D4;
+}
+
+#my-skills {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 230vh;
+    left: 9vw;
+}
+
+#skillProgressBar {
+    
 }

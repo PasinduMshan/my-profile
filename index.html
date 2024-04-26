@@ -22,7 +22,7 @@
 
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#aboutMeSection">About</a></li>
                 <li><a href="pages/page1.html#assignment">Assignment</a></li>
                 <li><a href="pages/page1.html#project">Project</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -83,20 +83,24 @@
         </section>
 
         <!--About me Section-->
-        <section>
+        <section id="aboutMeSection">
 
             <!--about me topic-->
             <div>
-                <h2 id="about">About me</h2>
+                <h2 id="aboutMeTitle">About me</h2>
             </div>
 
             <!--about me image-->
-            <div>
-                <img src="assets/images/about-me-pic.png" title="Picture" alt="my pic" width="200">
+            <div id="aboutMeImageDiv">
+                <img id="aboutMeImage" src="assets/images/about-me-pic.png" title="Picture" alt="my pic" width="200">
+            </div>
+
+            <div id="horizontalLine">
+
             </div>
 
             <!--about me paragraph-->
-            <div>
+            <div id="aboutMePara">
                 <p>
                     A passionate software engineering student specializing in Java. With a keen interest in crafting efficient and elegant solutions, I’m constantly  exploring the vast world of software development. Whether it’s building robust applications or delving into the intricacies of algorithm design, I thrive on the challenges and opportunities this field presents. Join me on this exciting journey as we harness the power of technology to shape a better tomorrow.
                 </p>
@@ -105,15 +109,15 @@
         </section>
 
         <!--Skill Section-->
-        <section>
+        <section id="skillSection">
 
             <!--skill topic-->
-            <div>
+            <div id="skillTitle">
                 <h2>Skills</h2>
             </div>
 
             <!--skills right side-->
-            <div>
+            <div id="my-skills">
                 <h4>Java</h4>
                 <h4>MySql</h4>
                 <h4>Html</h4>
@@ -122,7 +126,7 @@
             </div>
 
             <!--progress bar right side-->
-            <div>
+            <div id="skillProgressBar">
                 <progress max="100" value="95"></progress>
                 <progress max="100" value="93"></progress>
                 <progress max="100" value="85"></progress>
