@@ -56,7 +56,7 @@ header>nav>ul>li>a:hover {
 
 /*Hero Section*/
 
-#MainHeroSection {
+.sectionSize {
     width: 100vw;
     height: 100vh;
 }
@@ -98,8 +98,8 @@ header>nav>ul>li>a:hover {
 }
 
 .socialPicStyle:hover {
-    border: 2px solid #00e5ff;
-    border-radius: 100%;
+    /*border: 1px solid #00e5ff;*/
+    /*border-radius: 100%;*/
     box-shadow: rgba(0, 229, 255, 1) 0px 2px 4px 0px, rgba(0, 229, 255, 0.50) 0px 2px 16px 0px;
 }
 
@@ -136,11 +136,6 @@ header>nav>ul>li>a:hover {
 }
 
 /*About Me Section*/
-
-#aboutMeSection {
-    width: 100vw;
-    height: 100vh;
-}
 
 #aboutMeTitle {
     font-size: 3.5rem;
@@ -200,12 +195,7 @@ header>nav>ul>li>a:hover {
     top: 145vh ;
 }
 
-/* Skill Section */
-
-#skillSection {
-    width: 100vw;
-    height: 100vh;
-}
+ /*Skill Section*/
 
 #skillTitle {
     font-size: 2.5rem;
@@ -221,9 +211,18 @@ header>nav>ul>li>a:hover {
     color: white;
     position: absolute;
     top: 230vh;
-    left: 9vw;
+    left: 15vw;
 }
 
 #skillProgressBar {
-    
+    position: absolute;
+    top: 235vh;
+    left: 25vw;
 }
+
+.skillProgressBarStyle {
+    width: 60rem;
+    height: 1.5rem;
+    margin-bottom: 3.2rem;
+}
+

@@ -34,7 +34,7 @@
 
     <main>
         <!--Hero Section-->
-        <section id="MainHeroSection">
+        <section id="MainHeroSection" class="sectionSize">
 
             <!--hero left side-->
             <div>
@@ -78,12 +78,10 @@
                 <img src="assets/images/hero-profile-pic.png" title="picture" alt="my photo">
             </div>
 
-
-
         </section>
 
         <!--About me Section-->
-        <section id="aboutMeSection">
+        <section id="aboutMeSection" class="sectionSize">
 
             <!--about me topic-->
             <div>
@@ -109,7 +107,7 @@
         </section>
 
         <!--Skill Section-->
-        <section id="skillSection">
+        <section id="skillSection" class="sectionSize">
 
             <!--skill topic-->
             <div id="skillTitle">
@@ -127,47 +125,54 @@
 
             <!--progress bar right side-->
             <div id="skillProgressBar">
-                <progress max="100" value="95"></progress>
-                <progress max="100" value="93"></progress>
-                <progress max="100" value="85"></progress>
-                <progress max="100" value="75"></progress>
-                <progress max="100" value="90"></progress>
+                <div><progress class="skillProgressBarStyle" max="100" value="95"></progress></div>
+                <div><progress class="skillProgressBarStyle" max="100" value="93"></progress></div>
+                <div><progress class="skillProgressBarStyle" max="100" value="85"></progress></div>
+                <div><progress class="skillProgressBarStyle" max="100" value="75"></progress></div>
+                <div><progress class="skillProgressBarStyle" max="100" value="90"></progress></div>
             </div>
 
         </section>
 
         <!--Education Section-->
-        <section>
+        <section class="sectionSize">
 
             <!--Education topic-->
-            <div>
+            <div id="educationTitle">
                 <h2>Education</h2>
             </div>
 
+            <div id="lineInEdu">
+                <div id="eduCircle1" class="eduCircle"></div>
+                <div id="eduCircle2" class="eduCircle"></div>
+                <div id="eduCircle3" class="eduCircle"></div>
+                <div id="eduCircle4" class="eduCircle"></div>
+            </div>
+
             <!--Education details list-->
-             <div>
-                 <dl>
+             <div id="educationDetailList">
+                 <dl id="eduList">
                      <dt>
-                         <img src="assets/images/ijse.png" title="ijse.lk" alt="ijse-logo" width="80" >
+                         <img class="eduDetailPic" src="assets/images/ijse.png" title="ijse.lk" alt="ijse-logo">
                      </dt>
                      <dt>IJSE - Institute of Software Engineering</dt>
                      <dt>Program - GDSE</dt>
-                     <dd>Graduate Diploma in Software Engineering</dd>
+                     <dd class="MarginBottom">Graduate Diploma in Software Engineering</dd>
 
                      <dt>
-                         <img src="assets/images/VTA_Sri_lanka_Logo.png" title="vta.lk" alt="vta-logo" width="80">
+                         <img class="eduDetailPic" src="assets/images/VTA_Sri_lanka_Logo.png" title="vta.lk" alt="vta-logo" >
                      </dt>
                      <dt>Vocational Training Authority - Sri Lanka</dt>
                      <dt>Program - CAA </dt>
-                     <dd>Computer Application Assistant</dd>
+                     <dd class="MarginBottom">Computer Application Assistant</dd>
 
                      <dt>
-                         <img src="assets/images/Bandaranayake-college.png" title="bandaranayake college" alt="college-logo" width="80">
+                         <img class="eduDetailPic" src="assets/images/Bandaranayake-college.png" title="bandaranayake college" alt="college-logo" >
                      </dt>
                      <dt>Bandaranayake College - Gampaha</dt>
                      <dt>G.C.E. A/L</dt>
 
-                     <dt>Kimbulwillawaththa Maha Vidyalaya </dt>
+                     <dt id="eduListLast">Kimbulwillawaththa Maha Vidyalaya </dt>
                      <dt>G.C.E. O/L</dt>
                  </dl>
              </div>
