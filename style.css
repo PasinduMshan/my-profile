@@ -226,3 +226,78 @@ header>nav>ul>li>a:hover {
     margin-bottom: 3.2rem;
 }
 
+
+
+#educationTitle {
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 301vh;
+    left: 5vw;
+    -webkit-text-stroke: 1px #00B8D4;
+}
+
+#lineInEdu {
+    width: 0.3rem;
+    height: 40rem;
+    background-color: white;
+    position: absolute;
+    top: 323vh;
+    left: 15vw;
+}
+
+.eduCircle {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    background-color: #00B8D4;
+    border-radius: 100%;
+    box-shadow: rgba(0, 229, 255, 0.25) 0px 14px 28px, rgba(0, 229, 255, 0.22) 0px 10px 10px;
+}
+
+#eduCircle1 {
+    position: absolute;
+    top: -1rem;
+    left: -0.8rem;
+}
+
+#eduCircle2 {
+    position: absolute;
+    top: 10rem;
+    left: -0.8rem;
+}
+
+#eduCircle3 {
+    position: absolute;
+    top: 26rem;
+    left: -0.8rem;
+}
+
+#eduCircle4 {
+    position: absolute;
+    bottom: -1rem;
+    left: -0.8rem;
+}
+
+#educationDetailList {
+    color: white;
+    position: absolute;
+    top: 315vh;
+    left: 20vw;
+    font-size: 1.3rem;
+}
+
+#eduList>dt {
+    margin-bottom: 0.5rem;
+}
+
+.MarginBottom {
+    margin-bottom: 3rem;
+}
+
+#eduListLast {
+    margin-top: 4rem;
+}
+
+.eduDetailPic {
+    width: 9rem;
+}
