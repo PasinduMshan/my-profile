@@ -9,7 +9,8 @@
 
     <title>Pasindu Madushan</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/normalize.css">
 
 </head>
@@ -17,21 +18,23 @@
 
     <!--Header-->
     <header>
-        <img src="../assets/images/Portfolio_LOGO.png" title="Pasindu" alt="my logo" width="100">
-
         <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="#assignment">Assignment</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="../index.html#gallery">Gallery</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src='../assets/images/LOGO.png'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Assignment</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
-
         </nav>
     </header>
-
     <main>
         <!--Assignment Section-->
         <section>
