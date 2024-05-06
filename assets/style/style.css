@@ -1,11 +1,12 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Times New Roman", sans-serif;
+    background-color: #070508;
 }
 
 /*-- NavBar Styles --*/
@@ -16,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     padding: 0 2rem;
-    background-color: #000000;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +39,6 @@ body {
 
 .menu>li>a {
     display: inline-block;
-    /*text-transform: uppercase;*/
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: 500;
@@ -90,36 +90,3 @@ body {
     display: none;
 }
 
-/*-- Hero Section Style --*/
-
-
-
-@media(max-width: 610px){
-
-    /*-- NavBar Styles --*/
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: #000000;
-        transition: all 0.2s ease-in-out;
-    }
-    .menu>li {
-        margin-top: 40px;
-    }
-    .menu>li>a {
-        padding: 10px;
-    }
-    .open-menu , .close-menu {
-        display: block;
-    }
-    #check:checked ~ .menu {
-        right: 0;
-    }
-}
