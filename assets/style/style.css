@@ -116,6 +116,39 @@ body {
     position: relative;
 }
 
+#img-box {
+    width: fit-content;
+    height: fit-content;
+    /*text-align: center;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+#img-box>img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 40%;
+}
+
+.liquid-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 8%;
+}
+
+.liquid-shape:nth-child(2) {
+    filter: blur(50px);
+}
+
+
 #Hero-Main-Bottom-Left {
     display: grid;
     grid-template-rows: 3fr 1fr 1fr;
@@ -157,3 +190,4 @@ body {
     font-size: 1.25rem;
     font-family: sans-serif;
 }
+
