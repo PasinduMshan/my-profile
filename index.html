@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
     <!--Header-->
     <header>
-        <nav>
+         <nav>
             <ul class='nav-bar'>
                 <li class='logo'><a href='#'><img src='assets/images/Portfolio_LOGO.png'/></a></li>
                 <input type='checkbox' id='check' />
@@ -45,6 +47,7 @@
             <!-- Main-Top -->
             <div class="space-div"></div>
 
+            <!-- Main-Bottom -->
             <div id="Hero-Main-Bottom">
 
                 <!-- Main-Bottom-Left -->
@@ -161,208 +164,262 @@
         </section>
 
 
-
-
         <!--About me Section-->
-        <section id="aboutMeSection" class="sectionSize">
+        <section id="aboutMeSection">
+            <!-- AboutMe-Top -->
+            <div class="space-div"></div>
 
-            <!--about me topic-->
-            <div>
+            <!-- AboutMe-Top-Title -->
+            <div id="aboutMe-Top-Title">
                 <h2 id="aboutMeTitle">About me</h2>
             </div>
 
-            <!--about me image-->
-            <div id="aboutMeImageDiv">
-                <img id="aboutMeImage" src="assets/images/about-me-pic.png" title="Picture" alt="my pic" width="200">
+            <!-- AboutMe-Bottom-Details -->
+            <div id="aboutMe-Bottom-Details">
+
+
+                <!-- AboutMe-detail-left-Image -->
+                <div id="AboutMe-detail-left-Image">
+                    <div id="aboutMeImageDiv" >
+                        <img id="aboutMeImage" src="assets/images/about-me-pic.png" title="Picture" alt="my pic" width="200">
+                    </div>
+                </div>
+
+                <!-- AboutMe-detail-right-detail -->
+                <div id="AboutMe-detail-right-Detail">
+
+                    <!-- AboutMe-detail-center-Bar -->
+                    <div>
+                        <div id="horizontalLine"></div>
+                    </div>
+
+                    <!-- AboutMe-detail-right-Para -->
+                    <div>
+                        <div id="aboutMePara">
+                            <p>
+                                A passionate software engineering student specializing in Java. With a keen interest in crafting efficient and elegant solutions, I’m constantly  exploring the vast world of software development. Whether it’s building robust applications or delving into the intricacies of algorithm design, I thrive on the challenges and opportunities this field presents. Join me on this exciting journey as we harness the power of technology to shape a better tomorrow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
-            <div id="horizontalLine">
 
+        </section>
+
+
+
+        <!--About me Section-->
+        <!--<section id="aboutMeSection1" class="sectionSize">
+
+            &lt;!&ndash;about me topic&ndash;&gt;
+            <div>
+                <h2 id="aboutMeTitle1">About me</h2>
             </div>
 
-            <!--about me paragraph-->
+            &lt;!&ndash;about me image&ndash;&gt;
+            <div id="aboutMeImageDiv1" >
+                <img id="aboutMeImage1" src="assets/images/about-me-pic.png" title="Picture" alt="my pic" width="200">
+            </div>
+
+            <div id="horizontalLine1"></div>
+
+            &lt;!&ndash;about me paragraph&ndash;&gt;
             <div id="aboutMePara">
                 <p>
                     A passionate software engineering student specializing in Java. With a keen interest in crafting efficient and elegant solutions, I’m constantly  exploring the vast world of software development. Whether it’s building robust applications or delving into the intricacies of algorithm design, I thrive on the challenges and opportunities this field presents. Join me on this exciting journey as we harness the power of technology to shape a better tomorrow.
                 </p>
             </div>
 
-        </section>
+        </section>-->
 
-        <!--Skill Section-->
-        <section id="skillSection" class="sectionSize">
 
-            <!--skill topic-->
-            <div id="skillTitle">
-                <h2>Skills</h2>
-            </div>
 
-            <!--skills right side-->
-            <div id="my-skills">
-                <h4>Java</h4>
-                <h4>MySql</h4>
-                <h4>Html</h4>
-                <h4>CSS</h4>
-                <h4>GitHub</h4>
-            </div>
 
-            <!--progress bar right side-->
-            <div id="skillProgressBar">
-                <div><progress class="skillProgressBarStyle" max="100" value="95"></progress></div>
-                <div><progress class="skillProgressBarStyle" max="100" value="93"></progress></div>
-                <div><progress class="skillProgressBarStyle" max="100" value="85"></progress></div>
-                <div><progress class="skillProgressBarStyle" max="100" value="75"></progress></div>
-                <div><progress class="skillProgressBarStyle" max="100" value="90"></progress></div>
-            </div>
+<!--        &lt;!&ndash;Skill Section&ndash;&gt;-->
+<!--        <section id="skillSection" class="sectionSize">-->
 
-        </section>
+<!--            &lt;!&ndash;skill topic&ndash;&gt;-->
+<!--            <div id="skillTitle">-->
+<!--                <h2>Skills</h2>-->
+<!--            </div>-->
 
-        <!--Education Section-->
-        <section class="sectionSize" id="eduSec">
+<!--            &lt;!&ndash;skills right side&ndash;&gt;-->
+<!--            <div id="my-skills">-->
+<!--                <h4>Java</h4>-->
+<!--                <h4>MySql</h4>-->
+<!--                <h4>Html</h4>-->
+<!--                <h4>CSS</h4>-->
+<!--                <h4>GitHub</h4>-->
+<!--            </div>-->
 
-            <!--Education topic-->
-            <div id="educationTitle">
-                <h2>Education</h2>
-            </div>
+<!--            &lt;!&ndash;progress bar right side&ndash;&gt;-->
+<!--            <div id="skillProgressBar">-->
+<!--                <div><progress class="skillProgressBarStyle" max="100" value="95"></progress></div>-->
+<!--                <div><progress class="skillProgressBarStyle" max="100" value="93"></progress></div>-->
+<!--                <div><progress class="skillProgressBarStyle" max="100" value="85"></progress></div>-->
+<!--                <div><progress class="skillProgressBarStyle" max="100" value="75"></progress></div>-->
+<!--                <div><progress class="skillProgressBarStyle" max="100" value="90"></progress></div>-->
+<!--            </div>-->
 
-            <div id="lineInEdu">
-                <div id="eduCircle1" class="eduCircle"></div>
-                <div id="eduCircle2" class="eduCircle"></div>
-                <div id="eduCircle3" class="eduCircle"></div>
-                <div id="eduCircle4" class="eduCircle"></div>
-            </div>
+<!--        </section>-->
 
-            <!--Education details list-->
-             <div id="educationDetailList">
-                 <dl id="eduList">
-                     <dt>
-                         <img class="eduDetailPic" src="assets/images/ijse.png" title="ijse.lk" alt="ijse-logo">
-                     </dt>
-                     <dt>IJSE - Institute of Software Engineering</dt>
-                     <dt>Program - GDSE</dt>
-                     <dd class="MarginBottom">Graduate Diploma in Software Engineering</dd>
+<!--        &lt;!&ndash;Education Section&ndash;&gt;-->
+<!--        <section class="sectionSize" id="eduSec">-->
 
-                     <dt>
-                         <img class="eduDetailPic" src="assets/images/VTA_Sri_lanka_Logo.png" title="vta.lk" alt="vta-logo" >
-                     </dt>
-                     <dt>Vocational Training Authority - Sri Lanka</dt>
-                     <dt>Program - CAA </dt>
-                     <dd class="MarginBottom">Computer Application Assistant</dd>
+<!--            &lt;!&ndash;Education topic&ndash;&gt;-->
+<!--            <div id="educationTitle">-->
+<!--                <h2>Education</h2>-->
+<!--            </div>-->
 
-                     <dt>
-                         <img class="eduDetailPic" src="assets/images/Bandaranayake-college.png" title="bandaranayake college" alt="college-logo" >
-                     </dt>
-                     <dt>Bandaranayake College - Gampaha</dt>
-                     <dt>G.C.E. A/L</dt>
+<!--            <div id="lineInEdu">-->
+<!--                <div id="eduCircle1" class="eduCircle"></div>-->
+<!--                <div id="eduCircle2" class="eduCircle"></div>-->
+<!--                <div id="eduCircle3" class="eduCircle"></div>-->
+<!--                <div id="eduCircle4" class="eduCircle"></div>-->
+<!--            </div>-->
 
-                     <dt id="eduListLast">Kimbulwillawaththa Maha Vidyalaya </dt>
-                     <dt>G.C.E. O/L</dt>
-                 </dl>
-             </div>
-        </section>
+<!--            &lt;!&ndash;Education details list&ndash;&gt;-->
+<!--             <div id="educationDetailList">-->
+<!--                 <dl id="eduList">-->
+<!--                     <dt>-->
+<!--                         <img class="eduDetailPic" src="assets/images/ijse.png" title="ijse.lk" alt="ijse-logo">-->
+<!--                     </dt>-->
+<!--                     <dt>IJSE - Institute of Software Engineering</dt>-->
+<!--                     <dt>Program - GDSE</dt>-->
+<!--                     <dd class="MarginBottom">Graduate Diploma in Software Engineering</dd>-->
 
-        <!--Gallery Section-->
-        <section>
+<!--                     <dt>-->
+<!--                         <img class="eduDetailPic" src="assets/images/VTA_Sri_lanka_Logo.png" title="vta.lk" alt="vta-logo" >-->
+<!--                     </dt>-->
+<!--                     <dt>Vocational Training Authority - Sri Lanka</dt>-->
+<!--                     <dt>Program - CAA </dt>-->
+<!--                     <dd class="MarginBottom">Computer Application Assistant</dd>-->
 
-            <div>
-                <h2 id="gallery">Gallery</h2>
-            </div>
+<!--                     <dt>-->
+<!--                         <img class="eduDetailPic" src="assets/images/Bandaranayake-college.png" title="bandaranayake college" alt="college-logo" >-->
+<!--                     </dt>-->
+<!--                     <dt>Bandaranayake College - Gampaha</dt>-->
+<!--                     <dt>G.C.E. A/L</dt>-->
 
-            <div>
-                <img src="assets/images/team.jpeg" title="team-Vexon" alt="team" width="300">
-                <img src="assets/images/get-prise.jpeg" title="get-prise" alt="prise giving" width="300">
-                <img src="assets/images/friends.jpeg" title="friends" alt="friends" width="300">
-                <img src="assets/images/me.jpeg" title="my-pic" alt="My photo" width="300">
-                <img src="assets/images/vexon.jpeg" title="vexon team" alt="vexon team" width="300">
-                <img src="assets/images/trip.jpeg" title="trip" alt="trip pic" width="300">
-                <img src="assets/images/alone.jpeg" title="my pic" alt="my pic" width="300">
-            </div>
+<!--                     <dt id="eduListLast">Kimbulwillawaththa Maha Vidyalaya </dt>-->
+<!--                     <dt>G.C.E. O/L</dt>-->
+<!--                 </dl>-->
+<!--             </div>-->
+<!--        </section>-->
 
-        </section>
+<!--        &lt;!&ndash;Gallery Section&ndash;&gt;-->
+<!--        <section>-->
 
-        <!--Get in Touch Section-->
-        <section>
-            <hr>
+<!--            <div>-->
+<!--                <h2 id="gallery">Gallery</h2>-->
+<!--            </div>-->
 
-            <!--Topic-->
-            <div>
-                <h2 id="contact">Get in Touch</h2>
-            </div>
+<!--            <div>-->
+<!--                <img src="assets/images/team.jpeg" title="team-Vexon" alt="team" width="300">-->
+<!--                <img src="assets/images/get-prise.jpeg" title="get-prise" alt="prise giving" width="300">-->
+<!--                <img src="assets/images/friends.jpeg" title="friends" alt="friends" width="300">-->
+<!--                <img src="assets/images/me.jpeg" title="my-pic" alt="My photo" width="300">-->
+<!--                <img src="assets/images/vexon.jpeg" title="vexon team" alt="vexon team" width="300">-->
+<!--                <img src="assets/images/trip.jpeg" title="trip" alt="trip pic" width="300">-->
+<!--                <img src="assets/images/alone.jpeg" title="my pic" alt="my pic" width="300">-->
+<!--            </div>-->
 
-            <!--get in touch left side-->
-            <div>
-                <img src="assets/images/call.png" title="call" alt="Phone-logo" width="30">
-                <img src="assets/images/whatsapp.png" title="whatsapp.com" alt="whatsapp-logo" width="30">
-                <img src="assets/images/email.png" title="email" alt="email-logo" width="30">
-            </div>
+<!--        </section>-->
 
-            <div>
-                <h4>0717030640</h4>
-                <h4>0717030640</h4>
-                <h4>madushan01722@gmail.com</h4>
-            </div>
+<!--        &lt;!&ndash;Get in Touch Section&ndash;&gt;-->
+<!--        <section>-->
+<!--            <hr>-->
 
-            <div>
-                <a href="">
-                    <img src="assets/images/github.png" title="GitHub" alt="github-logo" width="60">
-                </a>
+<!--            &lt;!&ndash;Topic&ndash;&gt;-->
+<!--            <div>-->
+<!--                <h2 id="contact">Get in Touch</h2>-->
+<!--            </div>-->
 
-                <a href="">
-                    <img src="assets/images/linkedin.png" title="LinkedIn" alt="linkedin-logo" width="70">
-                </a>
+<!--            &lt;!&ndash;get in touch left side&ndash;&gt;-->
+<!--            <div>-->
+<!--                <img src="assets/images/call.png" title="call" alt="Phone-logo" width="30">-->
+<!--                <img src="assets/images/whatsapp.png" title="whatsapp.com" alt="whatsapp-logo" width="30">-->
+<!--                <img src="assets/images/email.png" title="email" alt="email-logo" width="30">-->
+<!--            </div>-->
 
-                <a href="">
-                    <img src="assets/images/facebook.png" title="facebook.com" alt="facebook-logo" width="70">
-                </a>
-            </div>
+<!--            <div>-->
+<!--                <h4>0717030640</h4>-->
+<!--                <h4>0717030640</h4>-->
+<!--                <h4>madushan01722@gmail.com</h4>-->
+<!--            </div>-->
 
-            <!--get in touch right side email send details-->
+<!--            <div>-->
+<!--                <a href="">-->
+<!--                    <img src="assets/images/github.png" title="GitHub" alt="github-logo" width="60">-->
+<!--                </a>-->
 
-            <section>
-                <div>
-                    <label for="from">From</label>
-                    <input type="text" id="from">
-                </div>
+<!--                <a href="">-->
+<!--                    <img src="assets/images/linkedin.png" title="LinkedIn" alt="linkedin-logo" width="70">-->
+<!--                </a>-->
 
-                <br>
+<!--                <a href="">-->
+<!--                    <img src="assets/images/facebook.png" title="facebook.com" alt="facebook-logo" width="70">-->
+<!--                </a>-->
+<!--            </div>-->
 
-                <div>
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject">
-                </div>
+<!--            &lt;!&ndash;get in touch right side email send details&ndash;&gt;-->
 
-                <br>
-                
-                <div>
-                    <label for="to">To</label>
-                    <input type="text" id="to">
-                </div>
+<!--            <section>-->
+<!--                <div>-->
+<!--                    <label for="from">From</label>-->
+<!--                    <input type="text" id="from">-->
+<!--                </div>-->
 
-                <br>
-                
-                <div>
-                    <label for="message">Message</label> <br>
-                    <textarea id="message" cols="50" rows="10"></textarea>
-                </div>
+<!--                <br>-->
 
-                <div>
-                    <input type="submit">
-                </div>
+<!--                <div>-->
+<!--                    <label for="subject">Subject</label>-->
+<!--                    <input type="text" id="subject">-->
+<!--                </div>-->
 
-            </section>
+<!--                <br>-->
 
-        </section>
+<!--                <div>-->
+<!--                    <label for="to">To</label>-->
+<!--                    <input type="text" id="to">-->
+<!--                </div>-->
 
-    </main>
+<!--                <br>-->
 
-    <!--Footer-->
-    <footer>
+<!--                <div>-->
+<!--                    <label for="message">Message</label> <br>-->
+<!--                    <textarea id="message" cols="50" rows="10"></textarea>-->
+<!--                </div>-->
 
-        <div>
-            © 2024 Pasindu Madushan. All rights reserved.
-        </div>
+<!--                <div>-->
+<!--                    <input type="submit">-->
+<!--                </div>-->
 
-    </footer>
+<!--            </section>-->
+
+<!--        </section>-->
+
+<!--    </main>-->
+
+<!--    &lt;!&ndash;Footer&ndash;&gt;-->
+<!--    <footer>-->
+
+<!--        <div>-->
+<!--            © 2024 Pasindu Madushan. All rights reserved.-->
+<!--        </div>-->
+
+<!--    </footer>-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 </html>

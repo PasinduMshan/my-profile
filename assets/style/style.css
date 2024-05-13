@@ -1,13 +1,13 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: "Times New Roman", sans-serif;
     background-color: #070508;
-    overflow: hidden;
+    /*overflow-x: hidden;*/
 }
 
 /*-- NavBar Styles --*/
@@ -90,7 +90,6 @@ body {
 #check {
     display: none;
 }
-
 
 /*-- Hero Section Style --*/
 
@@ -263,9 +262,129 @@ body {
 
 /*-- About me Section Style --*/
 
+#aboutMeSection {
+    height: 100vh;
+    width: 100vw;
+    /*background-color: greenyellow;*/
+}
+
+#aboutMe-Top-Title {
+    height: 3.938rem;
+    color: #FFFFFF;
+}
+
+#aboutMeTitle {
+    width: fit-content;
+    height: fit-content;
+    font-size: 3.625rem;
+    -webkit-text-stroke: 1px #00B8D4;
+    margin-left: 12vw;
+    text-shadow: 1px 1px 1px #00B8D4, 0 0 1em #2ca2ad, 0 0 0.1em #447275;
+
+}
+
+#aboutMe-Bottom-Details {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: calc(100vh - (8.274rem + 3.625rem));
+    /*background-color: #00e5ff;*/
+    /*border: 2px solid yellow;*/
+}
+
+#aboutMe-Bottom-Details>div {
+    /*border: 2px solid red;*/
+}
+
+#AboutMe-detail-left-Image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutMeImageDiv {
+    width: 25rem;
+    height: 39.375rem;
+    border-radius: 1.563rem;
+    background: linear-gradient(45deg,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutMeImage {
+    width: 23.125rem;
+    height: 37.5rem;
+    border-radius: 1.563rem;
+}
+
+#AboutMe-detail-right-Detail {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+}
+
+#AboutMe-detail-right-Detail>div {
+    /*background-color: orangered;*/
+    /*border: 5px solid pink;*/
+}
+
+#AboutMe-detail-right-Detail>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AboutMe-detail-right-Detail>div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#horizontalLine {
+    width: 1.063rem;
+    height: 18.75rem;
+    background-color: #00E5FF;
+    border-radius: 10px;
+    box-shadow: rgba(0, 229, 255, 0.1) 0px 4px 16px, rgba(0, 229, 255, 0.1) 0px 8px 24px, rgba(0, 229, 255, 0.1) 0px 16px 56px;
+}
+
+#aboutMePara {
+    width: 43.75rem;
+    height: 12.5rem;
+    color: #FFFFFF;
+    font-size: 1.563rem;
+    /*background-color: greenyellow;*/
+}
+
+
 
 
 /*-- Media Query --*/
+
+@media all and (max-width: 1280px) and (min-width: 1230px){
+    /*--- About Me Section ---*/
+
+    #aboutMePara {
+        width: 37.5rem;
+        height: 13.75rem;
+        font-size: 1.438rem;
+    }
+
+    #aboutMeImageDiv {
+        width: 23.75rem;
+        height: 37.5rem;
+    }
+
+    #aboutMeImage {
+        width: 21.875rem;
+        height: 35.625rem;
+    }
+
+    #aboutMeTitle {
+        font-size: 3rem;
+    }
+
+}
+
 
 @media all and (max-width: 1230px) and (min-width: 1024px){
 
@@ -296,6 +415,27 @@ body {
         top: 10%;
     }
 
+    /*--- About Me Section ---*/
+
+    #aboutMePara {
+        width: 31.25rem;
+        height: 13.75rem;
+        font-size: 1.313rem;
+    }
+
+    #aboutMeImageDiv {
+        width: 21.875rem;
+        height: 34.375rem;
+    }
+
+    #aboutMeImage {
+        width: 20rem;
+        height: 33.125rem;
+    }
+
+    #aboutMeTitle {
+        font-size: 3rem;
+    }
 }
 
 @media all and (max-width: 1024px) and (min-width: 960px) {
@@ -332,6 +472,28 @@ body {
         height: 115%;
     }
 
+    /*--- About me Section ---*/
+
+    #aboutMePara {
+        width: 28.125rem;
+        height: 13.75rem;
+        font-size: 1.313rem;
+    }
+
+    #aboutMeImageDiv {
+        width: 20.625rem;
+        height: 31.875rem;
+    }
+
+    #aboutMeImage {
+        width: 18.75rem;
+        height: 30rem;
+    }
+
+    #aboutMeTitle {
+        font-size: 3rem;
+    }
+
 }
 
 @media all and (max-width: 960px) and (min-width: 833px) {
@@ -362,6 +524,32 @@ body {
         width: 31.25rem;
     }
 
+    /*--- About Me Section ---*/
+
+    #aboutMePara {
+        width: 26.875rem;
+        height: 13.75rem;
+        font-size: 1.25rem;
+    }
+
+    #aboutMeImageDiv {
+        width: 18.75rem;
+        height: 30rem;
+    }
+
+    #aboutMeImage {
+        width: 17.5rem;
+        height: 28.125rem;
+    }
+
+    #aboutMeTitle {
+        font-size: 3rem;
+    }
+
+    #horizontalLine {
+        width: 0.938rem;
+        height: 18.75rem;
+    }
 }
 
 @media all and (max-width: 833px) and (min-width: 616px) {
@@ -414,6 +602,35 @@ body {
         /*border: 2px solid red;*/
     }
 
+    /*--- About Me Section ---*/
+
+    #aboutMePara {
+        width: 20.938rem;
+        height: 9.063rem;
+        font-size: 0.875rem;
+        /*background-color: pink;*/
+    }
+
+    #aboutMeImageDiv {
+        width: 14.375rem;
+        height: 22.5rem;
+    }
+
+    #aboutMeImage {
+        width: 13.125rem;
+        height: 21.563rem;
+    }
+
+    #aboutMeTitle {
+        font-size: 2.375rem;
+    }
+
+    #horizontalLine {
+        width: 0.625rem;
+        height: 13.75rem;
+    }
+
+
 }
 
 @media all and (max-width: 768px) and (min-width: 610px) {
@@ -444,7 +661,7 @@ body {
 
 }
 
-@media(max-width: 610px){
+@media all and (max-width: 610px){
 
     /*-- NavBar Styles --*/
     .menu {
@@ -460,10 +677,10 @@ body {
         background-color: #000000;
         transition: all 0.2s ease-in-out;
     }
-    .menu>li {
+    .menu li {
         margin-top: 40px;
     }
-    .menu>li>a {
+    .menu li a {
         padding: 10px;
     }
     .open-menu , .close-menu {
@@ -542,9 +759,50 @@ body {
         grid-template-rows: 2fr 1fr 1fr;
         /*border: 2px solid red;*/
     }
+
+    /*--- AboutMe Section ---*/
+
+    #aboutMe-Bottom-Details {
+        grid-template-rows: 1fr 2fr;
+        /*background-color: pink;*/
+    }
+
+    #AboutMe-detail-left-Image {
+        grid-row: 2/3;
+    }
+
+    #AboutMe-detail-right-Detail {
+        width: 100vw;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    #aboutMePara {
+        width: 23.75rem;
+        height: 9.375rem;
+        font-size: 0.938rem;
+    }
+
+    #aboutMeImageDiv {
+        width: 15.625rem;
+        height: 23.75rem;
+    }
+
+    #aboutMeImage {
+        width: 14.375rem;
+        height: 22.5rem;
+    }
+
+    #aboutMeTitle {
+        font-size: 2.375rem;
+    }
+
+    #horizontalLine {
+        width: 0.75rem;
+        height: 13.75rem;
+    }
 }
 
-@media(max-width: 500px) {
+@media all and (max-width: 500px) {
     /*--- NavBar ---*/
 
     .logo>a>img {
@@ -588,7 +846,60 @@ body {
         font-size: 0.563rem;
     }
 
+    /*--- AboutMe Section ---*/
 
+    #aboutMePara {
+        width: 19.438rem;
+        height: 9.813rem;
+        font-size: 0.875rem;
+    }
+
+    #aboutMeImageDiv {
+        width: 14.063rem;
+        height: 22.188rem;
+    }
+
+    #aboutMeImage {
+        width: 12.813rem;
+        height: 21.25rem;
+    }
+
+    #aboutMeTitle {
+        font-size: 1.875rem;
+    }
+
+    #horizontalLine {
+        width: 0.563rem;
+        height: 12.5rem;
+    }
+
+}
+
+@media all and (max-width: 430px){
+    /*--- AboutMe Section ---*/
+    #AboutMe-detail-right-Detail {
+        grid-template-columns: 0.5fr 3fr;
+    }
+}
+
+
+@media all and (max-width: 375px){
+    /*--- AboutMe Section ---*/
+    #aboutMePara {
+        width: 17.5rem;
+        height: 10rem;
+        font-size: 0.875rem;
+    }
+
+    #aboutMeImageDiv {
+        width: 11.25rem;
+        height: 15.625rem;
+    }
+
+    #aboutMeImage {
+        width: 10rem;
+        height: 14.688rem;
+    }
 }
 
 
