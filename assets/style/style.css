@@ -259,40 +259,38 @@ body {
     box-shadow: none;
 }
 
+/*-----------------------------------------------*/
 
-/*-- About me Section Style --*/
+/*== Section Title ==*/
 
-#aboutMeSection {
-    height: 100vh;
-    width: 100vw;
-    /*background-color: greenyellow;*/
-}
-
-#aboutMe-Top-Title {
+.TitleDiv {
     height: 3.938rem;
     color: #FFFFFF;
 }
 
-#aboutMeTitle {
+.title {
     width: fit-content;
     height: fit-content;
     font-size: 3.625rem;
     -webkit-text-stroke: 1px #00B8D4;
     margin-left: 12vw;
     text-shadow: 1px 1px 1px #00B8D4, 0 0 1em #2ca2ad, 0 0 0.1em #447275;
-
 }
+
+/*-----------------------------------------------*/
+
+/*-- About me Section Style --*/
+
+#aboutMeSection {
+    height: 100vh;
+    width: 100vw;
+}
+
 
 #aboutMe-Bottom-Details {
     display: grid;
     grid-template-columns: 2fr 3fr;
     height: calc(100vh - (8.274rem + 3.625rem));
-    /*background-color: #00e5ff;*/
-    /*border: 2px solid yellow;*/
-}
-
-#aboutMe-Bottom-Details>div {
-    /*border: 2px solid red;*/
 }
 
 #AboutMe-detail-left-Image {
@@ -322,11 +320,6 @@ body {
     grid-template-columns: 0.5fr 3fr;
 }
 
-#AboutMe-detail-right-Detail>div {
-    /*background-color: orangered;*/
-    /*border: 5px solid pink;*/
-}
-
 #AboutMe-detail-right-Detail>div:first-child {
     display: flex;
     align-items: center;
@@ -352,15 +345,134 @@ body {
     height: 12.5rem;
     color: #FFFFFF;
     font-size: 1.563rem;
-    /*background-color: greenyellow;*/
 }
+
+
+/*-- Skill Section Style --*/
+
+#skillSection {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#Skill-Bottom {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    height: calc(100vh - (8.274rem + 3.625rem));
+
+}
+
+#my-skills {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#my-skills>div {
+    max-width: 1000px;
+    margin-top: 10px;
+
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+}
+
+.skills>div {
+    margin: 20px;
+}
+
+.skills>div:first-child {
+    width: 150px;
+    color: #FFFFFF;
+    font-family: sans-serif, Arial;
+}
+
+.skills>div:last-child>progress {
+    width: 40vw;
+    height: 2vh;
+}
+
+#my-skills-images {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#my-skills-images>div {
+    max-width: 1000px;
+    width: 60vw;
+}
+
+#skill-img>div>div {
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+
+#skill-img {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#skill-img>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skill-img>div:first-child>div {
+    background-image: url("/assets/images/java-logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#skill-img>div:nth-child(2)>div {
+    background-image: url("/assets/images/mysql-logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#skill-img>div:nth-child(3)>div {
+    background-image: url("/assets/images/HTML_logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#skill-img>div:nth-child(4)>div {
+    background-image: url("/assets/images/CSS-Logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#skill-img>div:nth-child(5)>div {
+    background-image: url("/assets/images/JavaScript-Logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#skill-img>div:last-child>div {
+    background-image: url("/assets/images/Github-desktop-logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*-- Education Section Style --*/
+
 
 
 
 
 /*-- Media Query --*/
 
-@media all and (max-width: 1280px) and (min-width: 1230px){
+@media all and (max-width: 1280px) {
     /*--- About Me Section ---*/
 
     #aboutMePara {
@@ -379,14 +491,13 @@ body {
         height: 35.625rem;
     }
 
-    #aboutMeTitle {
+    .title {
         font-size: 3rem;
     }
 
 }
 
-
-@media all and (max-width: 1230px) and (min-width: 1024px){
+@media all and (max-width: 1230px) {
 
     /*--- Hero Section ---*/
 
@@ -433,12 +544,9 @@ body {
         height: 33.125rem;
     }
 
-    #aboutMeTitle {
-        font-size: 3rem;
-    }
 }
 
-@media all and (max-width: 1024px) and (min-width: 960px) {
+@media all and (max-width: 1024px) {
 
     /*--- Hero Section ---*/
 
@@ -490,13 +598,16 @@ body {
         height: 30rem;
     }
 
-    #aboutMeTitle {
-        font-size: 3rem;
+    /*--- Skill Section ---*/
+
+    #skill-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
 
-@media all and (max-width: 960px) and (min-width: 833px) {
+@media all and (max-width: 960px)  {
 
     /*--- Hero Section ---*/
 
@@ -542,17 +653,13 @@ body {
         height: 28.125rem;
     }
 
-    #aboutMeTitle {
-        font-size: 3rem;
-    }
-
     #horizontalLine {
         width: 0.938rem;
         height: 18.75rem;
     }
 }
 
-@media all and (max-width: 833px) and (min-width: 616px) {
+@media all and (max-width: 833px)  {
 
     /*--- Hero Section ---*/
 
@@ -621,7 +728,7 @@ body {
         height: 21.563rem;
     }
 
-    #aboutMeTitle {
+    .title {
         font-size: 2.375rem;
     }
 
@@ -633,7 +740,7 @@ body {
 
 }
 
-@media all and (max-width: 768px) and (min-width: 610px) {
+@media all and (max-width: 768px)  {
 
     /*--- Hero Section ---*/
 
@@ -661,7 +768,7 @@ body {
 
 }
 
-@media all and (max-width: 610px){
+@media all and (max-width: 610px) {
 
     /*-- NavBar Styles --*/
     .menu {
@@ -792,13 +899,16 @@ body {
         height: 22.5rem;
     }
 
-    #aboutMeTitle {
-        font-size: 2.375rem;
-    }
-
     #horizontalLine {
         width: 0.75rem;
         height: 13.75rem;
+    }
+
+    /*--- Skill Section ---*/
+
+    .skills>div:first-child {
+        width: 100px;
+        font-size: 0.875rem;
     }
 }
 
@@ -864,7 +974,7 @@ body {
         height: 21.25rem;
     }
 
-    #aboutMeTitle {
+    .title {
         font-size: 1.875rem;
     }
 
@@ -875,15 +985,21 @@ body {
 
 }
 
-@media all and (max-width: 430px){
+@media all and (max-width: 430px) {
     /*--- AboutMe Section ---*/
     #AboutMe-detail-right-Detail {
         grid-template-columns: 0.5fr 3fr;
     }
+
+    /*--- Skill Section ---*/
+
+    #skill-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-
-@media all and (max-width: 375px){
+@media all and (max-width: 375px) {
     /*--- AboutMe Section ---*/
     #aboutMePara {
         width: 17.5rem;
