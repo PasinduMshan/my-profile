@@ -353,14 +353,12 @@ body {
 #skillSection {
     height: 100vh;
     width: 100vw;
-
 }
 
 #Skill-Bottom {
     display: grid;
     grid-template-rows: 2fr 2fr;
     height: calc(100vh - (8.274rem + 3.625rem));
-
 }
 
 #my-skills {
@@ -466,6 +464,58 @@ body {
 
 /*-- Education Section Style --*/
 
+#educationSection {
+    width: 100vw;
+    height: 100vh;
+}
+
+#education-bottom {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 3fr;
+    height: calc(100vh - (8.274rem + 3.625rem));
+}
+
+#education-bottom>div {
+    display: flex;
+    align-items: center;
+}
+
+#educationDetailList>div {
+    margin: 40px 10px;
+    color: #FFFFFF;
+}
+
+#Education-Bottom-left-line {
+    justify-content: center;
+}
+
+#lineInEdu {
+    height: 470px;
+    width: 5px;
+    background-color: white;
+    position: relative;
+}
+
+.eduCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #00B8D4;
+    position: absolute;
+    left: -13px;
+}
+
+#eduCircle4 {
+    bottom: 0;
+}
+
+#eduCircle2 {
+    top: 150px;
+}
+
+#eduCircle3 {
+    top: 300px;
+}
 
 
 
