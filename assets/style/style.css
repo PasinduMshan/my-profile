@@ -517,14 +517,179 @@ body {
     top: 300px;
 }
 
+/*-- Gallery Section Style --*/
 
+#gallerySection {
+    width: 100vw;
+    height: 100vh;
+}
+
+#gallery-bottom {
+    display: grid;
+    grid-template-rows: 2.5fr 4fr;
+    height: calc(100vh - (8.274rem + 3.625rem));
+}
+
+#gallery-bottom-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-01 {
+    justify-content: flex-end;
+}
+
+#image-03 {
+    justify-content: flex-start;
+}
+
+.top-image-border-box {
+    width: 21.875rem; /*350px*/
+    height: 14.375rem; /*230px*/
+    background: linear-gradient(45deg,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%);
+    border-radius: 10%;
+    /*box-shadow: rgba(0, 229, 255, 0.16) 0px 3px 6px, rgba(0, 229, 255, 0.23) 0px 3px 6px;*/
+    box-shadow: 0px 0px 10px #00e5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 20.625rem; /*330px*/
+    height: 13.125rem; /*210px*/
+    border-radius: 10%;
+}
+
+#backImg01 {
+    background-image: url("/assets/images/team.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#backImg02 {
+    background-image: url("/assets/images/get-prise.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#backImg03 {
+    background-image: url("/assets/images/friends.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gallery-bottom-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#image-04 {
+    justify-content: flex-end;
+}
+
+.bottom-image-border-box {
+    background: linear-gradient(135deg,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%);
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px #00e5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-04-border-box {
+    width: 20rem; /*320px*/
+    height: 26.875rem; /*430px*/
+}
+
+#backImg04 {
+    width: 18.75rem; /*300px*/
+    height: 25.625rem; /*410px*/
+    border-radius: 10%;
+    background-image: url("/assets/images/me.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#image-5-6 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.image-5-6-border-box {
+    width: 21.875rem; /*350px*/
+    height: 11.875rem; /*190px*/
+}
+
+.backImg-5-6 {
+    width: 20.625rem; /*330px*/
+    height: 10.625rem; /*170px*/
+    border-radius: 10%;
+}
+
+#backImg05 {
+    background-image: url("/assets/images/vexon.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#backImg06 {
+    background-image: url("/assets/images/trip.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#image-07 {
+    justify-content: flex-start;
+}
+
+#image-07-border-box {
+    width: 20rem; /*320px*/
+    height: 26.25rem; /*430px*/
+}
+
+#backImg07 {
+    width: 18.75rem; /*300px*/
+    height: 25rem; /*400px*/
+    border-radius: 10%;
+    background-image: url("/assets/images/alone.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*-- Get In Touch Section Style --*/
+
+#Contact-line {
+    width: 100vw;
+    height: 0.375rem; /*6px*/
+}
+
+#Contact-line>hr {
+    height: 5px;
+    background-color: #00e5ff;
+    box-shadow: 0px 0px 10px #00e5ff;
+}
 
 
 /*-- Media Query --*/
 
 @media all and (max-width: 1280px) {
     /*--- About Me Section ---*/
-
     #aboutMePara {
         width: 37.5rem;
         height: 13.75rem;
@@ -543,6 +708,40 @@ body {
 
     .title {
         font-size: 3rem;
+    }
+
+    /*--- Gallery Section ---*/
+    .top-image-border-box {
+        width: 20rem; /*320px*/
+        height: 12.5rem; /*200px*/
+    }
+    .image {
+        width: 18.75rem; /*300px*/
+        height: 11.25rem; /*180px*/
+    }
+    #image-04-border-box {
+        width: 18.75rem; /*300px*/
+        height: 25.625rem; /*410px*/
+    }
+    #backImg04 {
+        width: 17.5rem; /*280px*/
+        height: 24.375rem; /*390px*/
+    }
+    .image-5-6-border-box {
+        width: 18.75rem; /*300px*/
+        height: 10.625rem; /*170px*/
+    }
+    .backImg-5-6 {
+        width: 17.5rem; /*280px*/
+        height: 9.375rem; /*150px*/
+    }
+    #image-07-border-box {
+        width: 18.75rem; /*300px*/
+        height: 25.625rem; /*410px*/
+    }
+    #backImg07 {
+        width: 17.5rem; /*280px*/
+        height: 24.375rem; /*390px*/
     }
 
 }
@@ -593,6 +792,68 @@ body {
         width: 20rem;
         height: 33.125rem;
     }
+
+    /*--- Gallery Section ---*/
+
+    .top-image-border-box {
+        width: 18.75rem; /*300px*/
+        height: 11.25rem; /*180px*/
+    }
+
+    .image {
+        width: 17.5rem; /*280px*/
+        height: 10rem; /*160px*/
+    }
+
+    #image-04-border-box {
+        width: 17.5rem; /*280px*/
+        height: 24.375rem; /*390px*/
+    }
+
+    #backImg04 {
+        width: 16.25rem; /*260px*/
+        height: 23.125rem; /*370px*/
+    }
+
+
+    .image-5-6-border-box {
+        width: 17.5rem; /*280px*/
+        height: 9.375rem; /*150px*/
+    }
+
+    .backImg-5-6 {
+        width: 16.25rem; /*260px*/
+        height: 8.125rem; /*130px*/
+    }
+
+    #image-07-border-box {
+        width: 17.5rem; /*280px*/
+        height: 24.375rem; /*390px*/
+    }
+
+    #backImg07 {
+        width: 16.25rem; /*260px*/
+        height: 23.125rem; /*370px*/
+    }
+
+    #image-05-top {
+        position: relative;
+    }
+
+    #image-05-border-box {
+        position: absolute;
+        top: 8.5vh;
+    }
+
+    #image-06-bottom {
+        position: relative;
+    }
+
+    #image-06-border-box {
+        position: absolute;
+        bottom: 8.5vh;
+    }
+
 
 }
 
@@ -655,6 +916,52 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /*--- Gallery Section ---*/
+
+    .top-image-border-box {
+        width: 17.5rem; /*280px*/
+        height: 10rem; /*160px*/
+    }
+
+    .image {
+        width: 16.25rem; /*260px*/
+        height: 8.75rem; /*140px*/
+    }
+
+
+
+    #image-04-border-box {
+        width: 16.25rem; /*260px*/
+        height: 23.125rem; /*370px*/
+    }
+
+    #backImg04 {
+        width: 15rem; /*240px*/
+        height: 21.875rem; /*350px*/
+    }
+
+
+    .image-5-6-border-box {
+        width: 16.25rem; /*260px*/
+        height: 8.125rem; /*130px*/
+    }
+
+    .backImg-5-6 {
+        width: 15rem; /*240px*/
+        height: 6.875rem; /*110px*/
+    }
+
+
+    #image-07-border-box {
+        width: 16.25rem; /*260px*/
+        height: 23.125rem; /*370px*/
+    }
+
+    #backImg07 {
+        width: 15rem; /*240px*/
+        height: 21.875rem; /*350px*/
+    }
+
 }
 
 @media all and (max-width: 960px)  {
@@ -706,6 +1013,62 @@ body {
     #horizontalLine {
         width: 0.938rem;
         height: 18.75rem;
+    }
+
+
+    /*--- Gallery Section ---*/
+
+    .top-image-border-box {
+        width: 14.375rem; /*230px*/
+        height: 10rem; /*160px*/
+    }
+
+    .image {
+        width: 13.125rem; /*210px*/
+        height: 8.75rem; /*140px*/
+    }
+
+
+
+    #image-04-border-box {
+        width: 10.625rem; /*170px*/
+        height: 18.125rem; /*290px*/
+    }
+
+    #backImg04 {
+        width: 9.375rem; /*150px*/
+        height: 16.875rem; /*350px*/
+    }
+
+
+
+    .image-5-6-border-box {
+        width: 11.25rem; /*180px*/
+        height: 7.5rem; /*120px*/
+    }
+
+    .backImg-5-6 {
+        width: 10rem; /*160px*/
+        height: 6.25rem; /*100px*/
+    }
+
+
+    #image-07-border-box {
+        width: 10.625rem; /*170px*/
+        height: 18.125rem; /*290px*/
+    }
+
+    #backImg07 {
+        width: 9.375rem; /*150px*/
+        height: 16.875rem; /*350px*/
+    }
+
+    #image-04 {
+        justify-content: center;
+    }
+
+    #image-07 {
+        justify-content: center;
     }
 }
 
@@ -814,6 +1177,18 @@ body {
         top: 20%;
         width: 120%;
         height: 120%;
+    }
+
+    /*--- Gallery Section ---*/
+
+    .top-image-border-box {
+        width: 11.25rem; /*180px*/
+        height: 7.5rem; /*120px*/
+    }
+
+    .image {
+        width: 10rem; /*160px*/
+        height: 6.25rem; /*100px*/
     }
 
 }
@@ -960,6 +1335,49 @@ body {
         width: 100px;
         font-size: 0.875rem;
     }
+
+    /*--- Gallery Section ---*/
+
+    .top-image-border-box {
+        width: 9.375rem; /*180px*/
+        height: 7.5rem; /*120px*/
+    }
+
+    .image {
+        width: 8.125rem; /*130px*/
+        height: 6.25rem; /*100px*/
+    }
+
+    #image-04-border-box {
+        width: 9.375rem; /*150px*/
+        height: 21.875rem; /*350px*/
+    }
+
+    #backImg04 {
+        width: 8.125rem; /*130px*/
+        height: 20.625rem; /*330px*/
+    }
+
+    .image-5-6-border-box {
+        width: 9.375rem; /*150px*/
+        height: 7.5rem; /*120px*/
+    }
+
+    .backImg-5-6 {
+        width: 8.125rem; /*130px*/
+        height: 6.25rem; /*100px*/
+    }
+
+
+    #image-07-border-box {
+        width: 9.375rem; /*150px*/
+        height: 21.875rem; /*350px*/
+    }
+
+    #backImg07 {
+        width: 8.125rem; /*130px*/
+        height: 20.625rem; /*330px*/
+    }
 }
 
 @media all and (max-width: 500px) {
@@ -1033,6 +1451,41 @@ body {
         height: 12.5rem;
     }
 
+    /*--- Gallery Section ---*/
+
+    #gallery-bottom-bottom {
+        display: none;
+    }
+
+    #gallery-bottom {
+        display: grid;
+        grid-template-rows: 5fr 0.2fr;
+        height: calc(100vh - (8.274rem + 3.625rem));
+    }
+
+    #gallery-bottom-top {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #image-01 {
+        justify-content: center;
+    }
+
+    #image-03 {
+        justify-content: center;
+    }
+
+    .top-image-border-box {
+        width: 18.75rem; /*300px*/
+        height: 12.5rem; /*200px*/
+    }
+
+    .image {
+        width: 17.5rem; /*280px*/
+        height: 11.25rem; /*180px*/
+    }
+
 }
 
 @media all and (max-width: 430px) {
@@ -1046,6 +1499,21 @@ body {
     #skill-img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 390px) {
+
+    /*--- Gallery Section ---*/
+
+    .top-image-border-box {
+        width: 17.5rem; /*280px*/
+        height: 9.375rem; /*180px*/
+    }
+
+    .image {
+        width: 16.25rem; /*280px*/
+        height: 8.125rem; /*180px*/
     }
 }
 
@@ -1066,7 +1534,21 @@ body {
         width: 10rem;
         height: 14.688rem;
     }
+
+    /*--- Gallery Section ---*/
+
+    .top-image-border-box {
+        width: 17.5rem; /*280px*/
+        height: 9.375rem; /*180px*/
+    }
+
+    .image {
+        width: 16.25rem; /*280px*/
+        height: 8.125rem; /*180px*/
+    }
 }
+
+
 
 
 
