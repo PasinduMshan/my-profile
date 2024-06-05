@@ -806,6 +806,21 @@ body {
     cursor: pointer;
 }
 
+footer {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>div {
+    color: white;
+    font-size: 1rem;
+
+}
+
 
 
 /*-- Media Query --*/
@@ -1538,6 +1553,10 @@ body {
 
     /*--- Gallery Section ---*/
 
+    #contactSection {
+        height: 180vh;
+    }
+
     #contact-bottom {
         grid-template-columns: 1fr;
     }
@@ -1552,11 +1571,6 @@ body {
 
     #contact-bottom-left {
         grid-template-rows: 1fr 0.8fr;
-        height: 50vh;
-    }
-
-    #contact-bottom-right {
-        height: 80vh;
     }
 
     #contact-bottom-right>div {
