@@ -674,9 +674,20 @@ body {
 
 /*-- Get In Touch Section Style --*/
 
+#contactSection {
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: calc(100vh - (8.274rem + 3.625rem + 0.938rem));
+}
+
 #Contact-line {
     width: 100vw;
-    height: 0.375rem; /*6px*/
+    height: 0.938rem; /*6px*/
 }
 
 #Contact-line>hr {
@@ -684,6 +695,117 @@ body {
     background-color: #00e5ff;
     box-shadow: 0px 0px 10px #00e5ff;
 }
+
+#contact-bottom>div {
+    /*border: 1px solid red;*/
+}
+
+#contact-bottom-left {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+#contact-bottom-left-Top {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+}
+
+
+#contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#contact-icon>div>div {
+    margin: 50px 30px;
+}
+
+#contact-icon>div>div>img {
+    width: 40px;
+    height: 40px;
+}
+
+#contact-detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#contact-detail>div>div {
+    margin: 75px 0;
+}
+
+#contact-detail>div>div>h3 {
+    color: white;
+}
+
+#contact-bottom-left-Bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-bottom-left-Bottom>div>a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: #00e5ff;
+    border-radius: 10%;
+    font-size: 4.063rem; /*65px*/
+    color: black;
+    text-decoration: none;
+    margin: 0 50px;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#contact-bottom-right {
+    display: grid;
+    grid-template-rows: 0.3fr 0.5fr 0.3fr 0.5fr 0.3fr 0.5fr 0.3fr 1.5fr 1fr;
+}
+
+#contact-bottom-right>div {
+    /*border: 1px solid green;*/
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.email-label-text-style {
+    color: white;
+    font-size: 1.25rem; /*20px*/
+}
+
+.input-small-field {
+    width: 46vw;
+    height: 4vh;
+    background-color: #37474F;
+    border: none;
+}
+
+#message {
+    width: 46vw;
+    height: 20vh;
+    background-color: #37474F;
+    border: none;
+}
+
+#email-submit-btn>div>input {
+    width: 9.063rem; /*145px*/
+    height: 3.125rem; /*50px*/
+    background-color: #00e5ff;
+    font-size: 1.25rem; /*20px*/
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    border-radius: 22px;
+    border: #00e5ff;
+    box-shadow: 0 0 10px #00B8D4;
+    cursor: pointer;
+}
+
 
 
 /*-- Media Query --*/
@@ -855,6 +977,17 @@ body {
     }
 
 
+    /*--- Contact Section ---*/
+
+    #contact-bottom-left-Bottom>div>a {
+        margin: 0 40px;
+    }
+
+    #contact-bottom-left-Top {
+        grid-template-columns: 0.8fr 2fr;
+    }
+
+
 }
 
 @media all and (max-width: 1024px) {
@@ -960,6 +1093,13 @@ body {
     #backImg07 {
         width: 15rem; /*240px*/
         height: 21.875rem; /*350px*/
+    }
+
+
+    /*--- Contact Section ---*/
+
+    #contact-bottom-left-Bottom>div>a {
+        margin: 0 30px;
     }
 
 }
@@ -1070,6 +1210,23 @@ body {
     #image-07 {
         justify-content: center;
     }
+
+    /*--- Contact Section ---*/
+
+    #contact-bottom-left-Bottom>div>a {
+        margin: 0 20px;
+        width: 60px;
+        height: 60px;
+        font-size: 3.125rem; /*50px*/
+    }
+
+    #email-submit-btn>div>input {
+        width: 7.5rem; /*120px*/
+        height: 2.188rem; /*35px*/
+        background-color: #00e5ff;
+        font-size: 1rem; /*20px*/
+    }
+
 }
 
 @media all and (max-width: 833px)  {
@@ -1378,6 +1535,43 @@ body {
         width: 8.125rem; /*130px*/
         height: 20.625rem; /*330px*/
     }
+
+    /*--- Gallery Section ---*/
+
+    #contact-bottom {
+        grid-template-columns: 1fr;
+    }
+
+
+    #contact-bottom-left-Bottom>div>a{
+        width: 80px;
+        height: 80px;
+        font-size: 4.063rem; /*65px*/
+        margin: 0 20px;
+    }
+
+    #contact-bottom-left {
+        grid-template-rows: 1fr 0.8fr;
+        height: 50vh;
+    }
+
+    #contact-bottom-right {
+        height: 80vh;
+    }
+
+    #contact-bottom-right>div {
+        margin-left: 50px;
+    }
+
+
+    .input-small-field {
+        width: 70vw;
+    }
+
+    #message {
+        width: 70vw;
+
+    }
 }
 
 @media all and (max-width: 500px) {
@@ -1546,6 +1740,16 @@ body {
         width: 16.25rem; /*280px*/
         height: 8.125rem; /*180px*/
     }
+
+    /*--- Contact Section ---*/
+
+    #contact-bottom-left-Bottom>div>a{
+        width: 60px;
+        height: 60px;
+        font-size: 3.125rem; /*50px*/
+        margin: 0 20px;
+    }
+
 }
 
 
