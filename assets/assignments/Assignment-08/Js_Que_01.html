@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS QUE 01</title>
+
+    <style>
+
+        body {
+            background-color: #e8e8e8;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mainTitle>div {
+            color: red;
+            font-family: sans-serif, Arial;
+            font-size: 4rem;
+            margin-top: 50px;
+        }
+
+        #gifAnim {
+            display: flex;
+            height: 45vh;
+            align-items: flex-end;
+        }
+
+        #gifAnim>div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gifDiv {
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-image: url("https://cur.glitter-graphics.net/pub/3698/3698776vsk644qxod.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #homeGif {
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-image: url("https://cdn.dribbble.com/users/502620/screenshots/1653724/flat_house.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 50px;
+        }
+
+        #gifAnim>div>div:nth-child(2) {
+            font-size: 2rem;
+        }
+
+        #start_stop_btn {
+            display: flex;
+            height: 18vh;
+            align-items: flex-end;
+        }
+
+        #start_stop_btn>button {
+            width: 100px;
+            height: 30px;
+            background-color: #797873;
+            border: 1px solid black;
+            margin: 20px;
+            font-size: 1rem;
+            color: white;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <section id="mainTitle">
+        <div>JS Que</div>
+    </section>
+
+    <section id="gifAnim">
+
+        <div>
+            <div class="gifDiv"></div>
+            <div id="value1">A</div>
+        </div>
+
+        <div>
+            <div class="gifDiv"></div>
+            <div id="value2">B</div>
+        </div>
+
+        <div>
+            <div class="gifDiv"></div>
+            <div id="value3">C</div>
+        </div>
+
+        <div>
+            <div class="gifDiv"></div>
+            <div id="value4">D</div>
+        </div>
+
+        <div>
+            <div class="gifDiv"></div>
+            <div id="value5">E</div>
+        </div>
+
+        <div>
+            <div class="gifDiv"></div>
+            <div id="value6">F</div>
+        </div>
+
+        <div>
+            <div id="homeGif"></div>
+        </div>
+
+    </section>
+
+    <section id="start_stop_btn">
+        <button type="button" id="start_btn">Start</button>
+        <button type="button" id="stop_btn">Stop</button>
+    </section>
+
+
+    <script src="assets/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+
+    var array = ["A", "B", "C", "D", "E", "F"];
+
+    var myInterval = null;
+
+    function replaceValues() {
+        let lastValue = array.pop();
+        array.unshift(lastValue);
+
+        $("#value1").text(array[0]);
+        $("#value2").text(array[1]);
+        $("#value3").text(array[2]);
+        $("#value4").text(array[3]);
+        $("#value5").text(array[4]);
+        $("#value6").text(array[5]);
+    }
+
+    $("#start_btn").on("click", () => {
+        myInterval = setInterval(replaceValues, 1000);
+    });
+
+    $("#stop_btn").on("click", () => {
+        clearInterval(myInterval);
+    });
+
+</script>
+</body>
+</html>

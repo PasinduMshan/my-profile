@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-01</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+        #section1 {
+            background-color: orangered;
+            position: absolute;
+        }
+
+        #section2 {
+            background-color: green;
+            position: absolute;
+            right: 0;
+        }
+
+        #section3 {
+            background-color: orange;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        #section4 {
+            background-color: deeppink;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        section {
+            width: 50%;
+            height: 50%;
+        }
+
+        #centerSquare {
+            width: 15%;
+            aspect-ratio: 1/1;
+            position: absolute;
+            background-color: white;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        #centerSquareCircle {
+            width: 50%;
+            aspect-ratio: 1/1;
+
+            background-color: red;
+
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            border-radius: 100px;
+        }
+
+        .sectionCircle {
+            width: 20%;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            border-radius: 100px;
+        }
+
+        .sectionSquare {
+            width: 40%;
+            aspect-ratio: 1/1;
+            position: absolute;
+            background-color: red;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #halfCircleTop {
+            width: 10%;
+            aspect-ratio: 2/1;
+
+            background-color: white;
+
+            position: absolute;
+
+            top: 0;
+            left: 45%;
+            border-radius: 0 0 100px 100px;
+        }
+
+        #halfCircleBottom {
+            width: 10%;
+            aspect-ratio: 2/1;
+
+            background-color: white;
+
+            position: absolute;
+
+            bottom: 0;
+            left: 45%;
+            border-radius: 100px 100px 0 0;
+        }
+
+        .oneQuarterCircle {
+            width: 8%;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+
+            position: absolute;
+
+        }
+
+        #topLeftSide {
+            border-radius: 0 0 150px 0;
+        }
+
+        #topRightSide {
+            border-radius: 0 0 0 150px;
+            right: 0;
+        }
+
+        #bottomLeftSide{
+            border-radius: 0 150px 0 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        #bottomRightSide {
+            border-radius: 150px 0 0 0;
+            right: 0;
+            bottom: 0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <section id="section1">
+        <div class="sectionCircle">
+            <div class="sectionSquare"></div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="sectionCircle">
+            <div class="sectionSquare"></div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="sectionCircle">
+            <div class="sectionSquare"></div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="sectionCircle">
+            <div class="sectionSquare"></div>
+        </div>
+    </section>
+
+    <section>
+        <div id="centerSquare">
+            <div id="centerSquareCircle"></div>
+        </div>
+    </section>
+
+    <section>
+        <div id="halfCircleTop"></div>
+    </section>
+
+    <section>
+        <div id="halfCircleBottom"></div>
+    </section>
+
+    <section>
+        <div id="topLeftSide" class="oneQuarterCircle"></div>
+    </section>
+
+    <section>
+        <div id="topRightSide" class="oneQuarterCircle"></div>
+    </section>
+
+    <section>
+        <div id="bottomLeftSide" class="oneQuarterCircle"></div>
+    </section>
+
+    <section>
+        <div id="bottomRightSide" class="oneQuarterCircle"></div>
+    </section>
+</body>
+</html>

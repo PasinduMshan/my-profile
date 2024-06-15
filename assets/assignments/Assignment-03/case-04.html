@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-04</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        section>div:nth-child(2) {
+            width: 100vw;
+            height: 10vh;
+            position: sticky;
+            top: 0;
+        }
+
+        h1 {
+            font-size: 150px;
+        }
+
+        h2 {
+            color: white;
+            margin: 0;
+        }
+
+        .centerWords {
+            width: 25vw;
+            aspect-ratio: 1/1;
+            position: absolute;
+
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        #div1 {
+            background-color: red;
+        }
+
+        #section2 {
+            bottom: -100%;
+            background-color: cornflowerblue;
+        }
+
+        #div2 {
+            background-color: darkblue;
+        }
+
+        #section3 {
+            bottom: -200%;
+            background-color: #605952;
+        }
+
+        #div3 {
+            background-color: #2a2926;
+        }
+
+        #section4 {
+            bottom: -200%;
+            background-color: #f23d2a;
+        }
+
+        #div4 {
+            background-color: #7d322b;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section>
+
+        <div class="centerWords">
+            <h1>Hello</h1>
+        </div>
+
+        <div id="div1">
+            <h2>Card 1</h2>
+        </div>
+
+    </section>
+
+    <section id="section2">
+
+        <div class="centerWords">
+            <h1>How</h1>
+        </div>
+
+        <div id="div2">
+            <h2>Card 2</h2>
+        </div>
+
+    </section>
+
+    <section id="section3">
+
+        <div class="centerWords">
+            <h1>Are</h1>
+        </div>
+
+        <div id="div3">
+            <h2>Card 3</h2>
+        </div>
+
+    </section>
+
+    <section id="section4">
+
+        <div class="centerWords">
+            <h1>You..?</h1>
+        </div>
+
+        <div id="div4">
+            <h2>Card 4</h2>
+        </div>
+
+    </section>
+</body>
+</html>

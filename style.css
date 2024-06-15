@@ -304,3 +304,176 @@ header>nav>ul>li>a:hover {
 }
 
 /* Gallery Section */
+
+/*/////////////////////////////////////////////////////*/
+
+
+/*-- Hero Section Style --*/
+
+#heroSection {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.space-div {
+    height: 8.274rem;
+}
+
+#Hero-Main-Bottom {
+    height: calc(100vh - 8.274rem);
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+
+#Hero-Main-Bottom>div {
+    height: 100%;
+}
+
+#Hero-Main-Bottom-Right {
+    position: relative;
+}
+
+#img-box {
+    width: fit-content;
+    height: fit-content;
+    /*text-align: center;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+#img-box>img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 40%;
+}
+
+.liquid-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 8%;
+}
+
+.liquid-shape:nth-child(2) {
+    filter: blur(50px);
+}
+
+
+#Hero-Main-Bottom-Left {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    border: 2px solid red;
+}
+
+#Name-details {
+    border: 1px solid yellow;
+    position: relative;
+}
+
+#Name-details>div{
+    width: 41.25rem;
+    height: 13.875rem;
+    position: absolute;
+    bottom: 2.188rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: snow;
+}
+
+#Name-details>div>h2 {
+    font-size: 2.063rem;
+    font-family: sans-serif;
+    font-weight: initial;
+}
+
+#Name-details>div>h1 {
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #18FFFF;
+    margin: 8px 0;
+    text-shadow: 1px 1px 2px #00B8D4, 0 0 1em #2ca2ad, 0 0 0.2em #447275;
+}
+
+#Name-details>div>p {
+    font-size: 1.25rem;
+    font-family: sans-serif;
+}
+
+#Social-Media-Pic {
+    border: 1px solid green;
+    position: relative;
+
+}
+
+#Social-Media-Pic>div {
+    width: 41.25rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+
+#Social-Media-Pic>div>a {
+    width: 4.063rem;
+    height: 4.063rem;
+    margin-right: 1.875rem;
+    border: 3px solid #18FFFF;
+    border-radius: 100%;
+    position: relative;
+}
+
+
+#Social-Media-Pic>div>div>a>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+#Social-Media-Pic>div>div:hover {
+
+}
+
+@media(max-width: 610px){
+
+    /*-- NavBar Styles --*/
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #000000;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu>li {
+        margin-top: 40px;
+    }
+    .menu>li>a {
+        padding: 10px;
+    }
+    .open-menu , .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}

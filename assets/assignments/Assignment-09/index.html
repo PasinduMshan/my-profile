@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-Night-Rider</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        section>div:first-child {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: red;
+            height: 40vh;
+            align-items: flex-end;
+        }
+
+        section>div:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 10vh;
+            align-items: flex-end;
+        }
+
+        section>div:nth-child(2)>div {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            /*background-color: white;*/
+        }
+
+        section>div:last-child {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        section>div:last-child>button {
+            width: 70px;
+            height: 30px;
+            font-size: 15px;
+            margin: 10px;
+        }
+
+        .light {
+            background-color: white;
+        }
+
+        .light_ON {
+            background-color: red;
+            box-shadow: 5px 10px 50px darkred;
+        }
+
+        .Blur_light_ON {
+            background-color: lightcoral;
+            box-shadow: 5px 10px 50px darkred;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+    <!--        <h2>JavaScript Knight Rider</h2>-->
+    <div>
+        <h2>JavaScript Knight Rider</h2>
+    </div>
+
+    <div>
+        <div class="light" id="div1"></div>
+        <div class="light" id="div2"></div>
+        <div class="light" id="div3"></div>
+        <div class="light" id="div4"></div>
+        <div class="light" id="div5"></div>
+        <div class="light" id="div6"></div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div>
+        <button id="btn-start">Start</button>
+        <button id="btn-stop">Stop</button>
+    </div>
+
+
+</section>
+
+<audio src="assets/audio/audio.mp3" id="audio"></audio>
+
+<script src="assets/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+
+    var current_light_index = 0;
+    var max_light_count = 6;
+    var move = "Right";
+
+    function updateLightPanel() {
+        $(".light").removeClass("light_ON");
+        $(".light").removeClass("Blur_light_ON");
+
+        $(".light").eq(current_light_index).addClass("light_ON");
+
+        if (move==="Right") {
+            if(current_light_index!==0) {
+                $(".light").eq(current_light_index-1).addClass("Blur_light_ON");
+            }
+
+            ++current_light_index;
+
+            if (current_light_index > max_light_count-2){
+                move = "Left";
+            }
+
+        } else {
+            $(".light").eq(current_light_index+1).addClass("Blur_light_ON");
+
+            --current_light_index;
+
+            if (current_light_index === 0){
+                move = "Right";
+            }
+        }
+
+    }
+
+    var start = null;
+
+
+    $("#btn-start").on('click', () => {
+        start = setInterval(updateLightPanel, 80);
+        $("#audio")[0].play();
+    });
+
+    $("#btn-stop").on('click', () => {
+        clearInterval(start);
+        $("#audio")[0].pause();
+    });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-02</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        #div1 {
+            width: 250px;
+            height: 250px;
+            background-color: gray;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #div1>h3 {
+            height: fit-content;
+            width: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        div::before {
+            content: "";
+            border: 10px solid white;
+            border-top-color: red;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        div:hover::before {
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h3>RDAW</h3>
+    </div>
+</body>
+</html>

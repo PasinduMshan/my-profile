@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-05</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        main {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        section {
+            display: flex;
+            width: 400vw;
+            animation-duration: 4s;
+            animation-name: animation;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        main>section>div:first-child{
+            width: 100vw;
+            height: 100vh;
+            background-image: url("assets/image/slide1.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main>section>div:nth-child(2) {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("assets/image/slide2.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main>section>div:nth-child(3){
+            width: 100vw;
+            height: 100vh;
+            background-image: url("assets/image/slide3.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main>section>div:last-child {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("assets/image/slide4.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @keyframes animation {
+            0%,20% {
+                transform: translateX(0%);
+            }
+
+            25%,45% {
+                transform: translateX(-25%);
+            }
+
+            50%, 70% {
+                transform: translateX(-50%);
+            }
+
+            75%, 100% {
+                transform: translateX(-75%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+</body>
+</html>

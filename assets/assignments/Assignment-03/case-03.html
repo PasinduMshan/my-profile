@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-03</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        #FixedBorderCircle1 {
+            width: 240px;
+            aspect-ratio: 1/1;
+            border: 10px solid gray;
+        }
+
+        #FixedBorderCircle2 {
+            width: 220px;
+            aspect-ratio: 1/1;
+            border: 10px solid red;
+        }
+
+        .FixedBorderCircle {
+            border-radius: 100%;
+
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+
+        .circle {
+            width: 220px;
+            height: 220px;
+            border-radius: 100%;
+            color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #circle1 {
+            background-color: purple;
+        }
+
+        section>div>h2 {
+            height: fit-content;
+            width: fit-content;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #circle2 {
+            background-color: dodgerblue;
+        }
+
+        #section2 {
+            bottom: -100%;
+        }
+
+        #circle3 {
+            background-color: orange;
+        }
+
+        #section3 {
+            bottom: -200%;
+        }
+    </style>
+</head>
+<body>
+    <section id="section1">
+        <div id="circle1" class="circle">
+            <h2>Hello</h2>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div id="circle2" class="circle">
+            <h2>Welcome To</h2>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div id="circle3" class="circle">
+            <h2>Institute of Software Engineering</h2>
+        </div>
+    </section>
+
+    <div id="FixedBorderCircle1" class="FixedBorderCircle"></div>
+    <div id="FixedBorderCircle2" class="FixedBorderCircle"></div>
+
+</body>
+</html>

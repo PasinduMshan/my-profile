@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script Queue</title>
+
+    <style>
+
+        body {
+            background-color: #36474f;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mainTitle>div {
+            color: white;
+            font-size: 2.5rem;
+            font-family: sans-serif, Arial;
+            margin-top: 50px;
+        }
+
+        .colorBox {
+            width: 100px;
+            height: 50px;
+            background-color: #e8e8e8;
+            margin: 0 5px;
+        }
+
+        .line {
+            width: 700px;
+            height: 2px;
+            background-color: white;
+        }
+
+        .lightBoard {
+            align-items: flex-end;
+        }
+
+        #box1 {
+            height: 28vh;
+        }
+
+        #box1>div {
+            width: 700px;
+        }
+
+        #box2 {
+            height: 3vh;
+        }
+
+        #box3>div {
+            display: flex;
+        }
+
+        #box3 {
+            height: 7vh;
+        }
+
+        #box4 {
+            height: 2vh;
+        }
+
+        #box5 {
+            height: 7vh;
+        }
+
+        #box5>div {
+            width: 700px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #start_stop_btn {
+            height: 20vh;
+        }
+
+        #start_stop_btn>button {
+            width: 90px;
+            height: 30px;
+            background-color: aqua;
+            border: aqua;
+            margin: 20px;
+            border-radius: 5%;
+            /*color: white;*/
+            font-size: 1.2rem;
+        }
+
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .pink {
+            background-color: lightpink;
+        }
+        .purple {
+            background-color: purple;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <section id="mainTitle">
+        <div>Java Script Queue</div>
+    </section>
+
+
+    <section id="box1" class="lightBoard">
+        <div>
+            <div id="color1" class="colorBox red"></div>
+        </div>
+    </section>
+
+    <section id="box2" class="lightBoard">
+        <div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <section id="box3" class="lightBoard">
+        <div>
+            <div id="color2" class="colorBox green"></div>
+            <div id="color3" class="colorBox blue"></div>
+            <div id="color4" class="colorBox yellow"></div>
+            <div id="color5" class="colorBox pink"></div>
+        </div>
+    </section>
+
+    <section id="box4" class="lightBoard">
+        <div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <section id="box5" class="lightBoard">
+        <div>
+            <div id="color6" class="colorBox purple"></div>
+        </div>
+    </section>
+
+    <section id="start_stop_btn">
+        <button type="button" id="start_btn">Start</button>
+        <button type="button" id="stop_btn">Stop</button>
+    </section>
+
+    <script src="assets/lib/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+        var array = [{background: "red"}, {background: "green"}, {background : "blue"}, {background: "yellow"},
+            {background: "lightpink"}, {background: "purple"} ];
+
+        var myInterval = null;
+
+        function replaceColor() {
+            let lastColor = array.pop();
+            array.unshift(lastColor);
+
+            $("#color1").css(array[0])
+            $("#color2").css(array[1])
+            $("#color3").css(array[2])
+            $("#color4").css(array[3])
+            $("#color5").css(array[4])
+            $("#color6").css(array[5])
+        }
+
+        $("#start_btn").on("click", () => {
+            myInterval = setInterval(replaceColor, 1000);
+        });
+
+        $("#stop_btn").on("click", () => {
+            clearInterval(myInterval);
+        });
+    </script>
+
+</body>
+</html>

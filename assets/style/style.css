@@ -822,6 +822,385 @@ footer>div {
 }
 
 
+/*-- Assignment Section Style --*/
+
+#assignmentSection {
+    width: 100vw;
+    height: 185vh;
+}
+
+#assignment-Bottom {
+    height: calc(185vh - (8.274rem + 3.625rem));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#assignment-Bottom>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Assignment-box {
+    width: 250px;
+    height: 300px;
+    border: 4px solid #00e5ff;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.Assignment-box:hover {
+    box-shadow:0 0 10px #18FFFF;
+    /*background-color: #37474F;*/
+    background-color: #212b30;
+}
+
+.Assignment-box-Name {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Assignment-01-Box-button {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Assignment-box-button>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Assignment-box-button>div>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid grey;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: #18FFFF;
+    text-decoration: none;
+}
+
+.Assignment-box>div:nth-child(2)>div>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-02-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.Assignment-Box-Bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#assignment-03-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-03-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+.Assignment-Box-Bottom>div>a {
+    background: transparent;
+    font-size: 1.3rem;
+    color: #18FFFF;
+    text-decoration: none;
+}
+
+.Assignment-Box-Bottom>div>a:hover {
+    color: white;
+}
+
+.Assignment-Box-Bottom>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#assignment-04-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-04-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-05-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#Assignment-06-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#assignment-06-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-06-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-07-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#assignment-07-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-07-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-08-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#assignment-08-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-08-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-09-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#assignment-09-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-09-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-10-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#assignment-10-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-10-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-11-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#assignment-11-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-11-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+#Assignment-12-Box-button {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#assignment-12-git-repo>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+
+#assignment-12-git-repo>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+
+/*-- Project Section Style --*/
+
+#projectSection {
+    width: 100vw;
+    height: 100vh;
+}
+
+#project-Bottom {
+    height: calc(100vh - (8.274rem + 3.625rem));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#project-Bottom>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Project-box {
+    width: 350px;
+    height: 500px;
+    border: 4px solid #00e5ff;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+
+.Project-box>div {
+    /*border: 2px solid red;*/
+}
+
+.project-image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 342px;
+    height: 295px;
+}
+
+.project-image-box>img {
+    width: 342px;
+    height: 295px;
+}
+
+.project-name {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-git-repo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-git-repo>div>a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid grey;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: #18FFFF;
+    text-decoration: none;
+}
+
+.project-git-repo>div>a:hover {
+    background: #006674;
+    color: #FFFFFF;
+    border-color: #18FFFF;
+    box-shadow:0 0 10px #18FFFF;
+}
+
+.Project-box:hover {
+    box-shadow:0 0 10px #18FFFF;
+    /*background-color: #37474F;*/
+    background-color: #212b30;
+}
+
 
 /*-- Media Query --*/
 
@@ -879,6 +1258,17 @@ footer>div {
     #backImg07 {
         width: 17.5rem; /*280px*/
         height: 24.375rem; /*390px*/
+    }
+
+    /*--- Project Section ---*/
+
+    #projectSection {
+        height: 185vh;
+    }
+
+    #project-Bottom {
+        height: calc(185vh - (8.274rem + 3.625rem));
+        grid-template-columns: 1fr;
     }
 
 }
@@ -1322,6 +1712,20 @@ footer>div {
         height: 13.75rem;
     }
 
+    /*--- Assignment Section ---*/
+
+    #assignmentSection {
+        width: 100vw;
+        height: 260vh;
+    }
+
+    #assignment-Bottom {
+        height: calc(260vh - (8.274rem + 3.625rem));
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 
 }
 
@@ -1585,6 +1989,23 @@ footer>div {
     #message {
         width: 70vw;
 
+    }
+
+    /*--- Assignment Section ---*/
+
+    #assignmentSection {
+        width: 100vw;
+        height: 460vh;
+    }
+
+    #assignment-Bottom {
+        height: calc(460vh - (8.274rem + 3.625rem));
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Assignment-box-Name {
+        font-size: 20px;
     }
 }
 

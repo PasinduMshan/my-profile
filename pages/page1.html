@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../assets/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
@@ -20,83 +23,384 @@
     <header>
         <nav>
             <ul class='nav-bar'>
-                <li class='logo'><a href='#'><img src='../assets/images/LOGO.png'/></a></li>
+                <li class='logo'><a href='#'><img src='/assets/images/Portfolio_LOGO.png'/></a></li>
                 <input type='checkbox' id='check' />
                 <span class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Assignment</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contact</a></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#aboutMeSectionNav">About</a></li>
+                        <li><a href="#assignmentSectionNav">Assignment</a></li>
+                        <li><a href="#projectSectionNav">Project</a></li>
+                        <li><a href="../index.html#gallerySectionNav">Gallery</a></li>
+                        <li><a href="../index.html#contactSectionNav">Contact</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
     </header>
+
     <main>
-        <!--Assignment Section-->
-        <section>
-            <!--Assignment topic-->
-            <div>
-                <h2 id="assignment">Assignment</h2>
+
+        <!-- Assignment Section -->
+        <section id="assignmentSection">
+
+            <!-- Assignment-Top -->
+            <div id="assignmentSectionNav" class="space-div"></div>
+
+            <!-- Assignment-Top-Title -->
+            <div data-aos="fade-up"
+                 data-aos-duration="1500" id="assignment-Top-Title" class="TitleDiv">
+                <h2 id="assignmentTitle" class="title">Assignment</h2>
             </div>
 
-            <!--assignments-->
-            <div>
-                <a href="">Assignment 1</a>
-                <a href="">Assignment 2</a>
-                <a href="">Assignment 3</a>
-                <a href="">Assignment 4</a>
-                <a href="">Assignment 5</a>
-                <a href="">Assignment 6</a>
-                <a href="">Assignment 7</a>
-                <a href="">Assignment 8</a>
-                <a href="">Assignment 9</a>
-                <a href="">Assignment 10</a>
-                <a href="">Assignment 11</a>
-                <a href="">Assignment 12</a>
-            </div>
+            <!-- Assignment-Bottom-Details -->
+            <div id="assignment-Bottom">
+                    <!-- Assignment Boxes -->
+                    <div>
+                        <div data-aos="fade-up-right" id="Assignment-box" class="Assignment-box">
+                            <!-- Assignment-Box-Top -->
+                            <div id="Assignment-box-Name" class="Assignment-box-Name">Assignment 01</div>
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-01-Box-button" class="Assignment-box-button">
+                                <!-- Assignment-box-button -->
+                                <div>
+                                    <a href="https://drive.google.com/file/d/1AgQ89KfFj8JIp01hAh7yccehbHydpWpL/view?usp=sharing" target="_blank"><i class="fa-brands fa-figma"></i></a>
+                                </div>
 
-            <div>
-                <a href=""><img src="../assets/images/left-arrow.png" title="arrow" alt="arrow" width="40"></a>
-                <a href=""><img src="../assets/images/right-arrow.png" title="arrow" alt="arrow" width="40"></a>
+                                <div>
+                                    <a href="https://www.gloomaps.com/RTvczifvvz" target="_blank"><i class="fa-solid fa-sitemap"></i></a>
+                                </div>
+
+                                <div>
+                                    <a href="https://drive.google.com/file/d/1AgQ89KfFj8JIp01hAh7yccehbHydpWpL/view?usp=sharing" target="_blank"><i class="fa-solid fa-palette"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-up-left" class="Assignment-box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 02</div>
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-02-Box-button" class="Assignment-box-button">
+                                <!-- Assignment-box-button -->
+                                <div>
+                                    <a href="../assets/assignments/Assignment-02/index.html" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-down-right" class="Assignment-box" id="Assignment-03-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 03</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-03-Box-button" class="Assignment-Box-Bottom">
+                                <!-- Assignment-box-button -->
+                                <div>
+                                    <a href="../assets/assignments/Assignment-03/case-01.html" target="_blank">Case-01</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-03/case-02.html" target="_blank">Case-02</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-03/case-03.html" target="_blank">Case-03</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-03/case-04.html" target="_blank">Case-04</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-03/case-05.html" target="_blank">Case-05</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-03/case-06.html" target="_blank">Case-06</a>
+                                </div>
+                                <div></div>
+                                <div id="assignment-03-git-repo">
+                                    <a href="https://github.com/PasinduMshan/CSS-Asignment_03.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-down-left" class="Assignment-box" id="Assignment-04-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 04</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-04-Box-button" class="Assignment-Box-Bottom">
+                                <!-- Assignment-box-button -->
+                                <div>
+                                    <a href="../assets/assignments/Assignment-04/case-01.html" target="_blank">Case-01</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-04/case-02.html" target="_blank">Case-02</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-04/case-03.html" target="_blank">Case-03</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-04/case-04.html" target="_blank">Case-04</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-04/case-05.html" target="_blank">Case-05</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-04/case-06.html" target="_blank">Case-06</a>
+                                </div>
+                                <div></div>
+                                <div id="assignment-04-git-repo">
+                                    <a href="https://github.com/PasinduMshan/CSS-Assignment_04.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-up-right" class="Assignment-box" id="Assignment-05-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 05</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-05-Box-button" class="Assignment-box-button">
+                                <div id="assignment-05-git-repo">
+                                    <a href="https://github.com/PasinduMshan/CSS-Assignment_04.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <div data-aos="fade-up-left" class="Assignment-box" id="Assignment-06-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 06</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-06-Box-button" class="Assignment-Box-Bottom">
+                                <div>
+                                    <a href="../assets/assignments/Assignment-06/index.html" target="_blank">Demo</a>
+                                </div>
+                                <div id="assignment-06-git-repo">
+                                    <a href="https://github.com/PasinduMshan/CSS-Assignment_06.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-down-right" class="Assignment-box" id="Assignment-07-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 07-POS</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-07-Box-button" class="Assignment-Box-Bottom">
+                                <div>
+                                    <a href="../assets/assignments/Assignment-07/index.html" target="_blank">Demo</a>
+                                </div>
+                                <div id="assignment-07-git-repo">
+                                    <a href="https://github.com/PasinduMshan/CSS-Assignment_06.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-down-left" class="Assignment-box" id="Assignment-08-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 08</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-08-Box-button" class="Assignment-Box-Bottom">
+                                <div>
+                                    <a href="../assets/assignments/Assignment-08/Js_Que_01.html" target="_blank">JS-Que-01</a>
+                                </div>
+                                <div>
+                                    <a href="../assets/assignments/Assignment-08/Js_Que_02.html" target="_blank">JS-Que-02</a>
+                                </div>
+                                <div id="assignment-08-git-repo">
+                                    <a href="https://github.com/PasinduMshan/JS-Que-Assignment-08.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-up-right" class="Assignment-box" id="Assignment-09-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 09</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-09-Box-button" class="Assignment-Box-Bottom">
+                                <div>
+                                    <a href="../assets/assignments/Assignment-09/index.html" target="_blank">JS-Night-Rider</a>
+                                </div>
+                                <div id="assignment-09-git-repo">
+                                    <a href="https://github.com/PasinduMshan/JS-Night-Rider-Assignment-09.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-up-left" class="Assignment-box" id="Assignment-10-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 10</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-10-Box-button" class="Assignment-Box-Bottom">
+                                <div>
+                                    <a href="../assets/assignments/Assignment-10/index.html" target="_blank">Calculator</a>
+                                </div>
+                                <div id="assignment-10-git-repo">
+                                    <a href="https://github.com/PasinduMshan/Calculator-Assignment-10.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-down-right" class="Assignment-box" id="Assignment-11-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 11</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-11-Box-button" class="Assignment-Box-Bottom">
+                                <div>
+                                    <a href="../assets/assignments/Assignment-07/index.html" target="_blank">Demo</a>
+                                </div>
+                                <div id="assignment-11-git-repo">
+                                    <a href="https://github.com/PasinduMshan/CSS-Assignment_06.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-down-left" class="Assignment-box" id="Assignment-12-Box">
+                            <!-- Assignment-Box-Top -->
+                            <div class="Assignment-box-Name">Assignment 12</div>
+
+                            <!-- Assignment-Box-Bottom -->
+                            <div id="Assignment-12-Box-button" class="Assignment-Box-Bottom">
+                                <div>
+                                    <a href="../assets/assignments/Assignment-07/index.html" target="_blank">Demo</a>
+                                </div>
+                                <div id="assignment-12-git-repo">
+                                    <a href="https://github.com/PasinduMshan/CSS-Assignment_06.git" target="_blank"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
         </section>
 
-        <!--Project Section-->
-        <section>
-            <!--Project topic-->
-            <div>
-                <h2 id="project">Projects</h2>
+        <!-- Project Section -->
+
+        <section id="projectSection">
+
+            <!-- Project-Top -->
+            <div id="projectSectionNav" class="space-div"></div>
+
+            <!-- Project-Top-Title -->
+            <div data-aos="fade-up"
+                 data-aos-duration="1500" id="project-Top-Title" class="TitleDiv">
+                <h2 id="projectTitle" class="title">Project</h2>
             </div>
 
-            <!--project-->
-            <div>
-                <a href="">Project 1</a>
-                <a href="">Project 2</a>
-                <a href="">Project 3</a>
-                <a href="">Project 4</a>
-                <a href="">Project 5</a>
-                <a href="">Project 6</a>
-                <a href="">Project 7</a>
-                <a href="">Project 8</a>
-                <a href="">Project 9</a>
-                <a href="">Project 10</a>
-                <a href="">Project 11</a>
-                <a href="">Project 12</a>
-            </div>
+            <!-- Project-Bottom-Details -->
+            <div id="project-Bottom">
 
-            <div>
-                <a href=""><img src="../assets/images/left-arrow.png" title="arrow" alt="arrow" width="40"></a>
-                <a href=""><img src="../assets/images/right-arrow.png" title="arrow" alt="arrow" width="40"></a>
+                <div>
+                    <!-- Project Box -->
+                    <div data-aos="fade-left"
+                         data-aos-easing="linear"
+                         data-aos-duration="1500" class="Project-box">
+
+                        <!-- Project Image -->
+                        <div class="project-image-box">
+                            <img src="../assets/images/Project-1.png" >
+                        </div>
+
+                        <!-- Project Name -->
+                        <div class="project-name">Student Management System</div>
+
+                        <!-- Git Repo -->
+                        <div class="project-git-repo">
+                            <div>
+                                <a href="https://github.com/PasinduMshan/Project-Sihina-Refactor-with-Layerd-Architecture.git" target="_blank"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <!-- Project Box -->
+                    <div data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="2000" class="Project-box">
+
+                        <!-- Project Image -->
+                        <div class="project-image-box">
+                            <img src="../assets/images/Project-2.png" >
+                        </div>
+
+                        <!-- Project Name -->
+                        <div class="project-name">Chat Application</div>
+
+                        <!-- Git Repo -->
+                        <div class="project-git-repo">
+                            <div>
+                                <a href="https://github.com/PasinduMshan/chat-application.git" target="_blank"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <!-- Project Box -->
+                    <div data-aos="fade-right"
+                         data-aos-easing="linear"
+                         data-aos-duration="1500" class="Project-box">
+
+                        <!-- Project Image -->
+                        <div class="project-image-box">
+                            <img src="../assets/images/Project-3.png" >
+                        </div>
+
+                        <!-- Project Name -->
+                        <div class="project-name">The Book Warm<br>Library Management System</div>
+
+                        <!-- Git Repo -->
+                        <div class="project-git-repo">
+                            <div>
+                                <a href="https://github.com/PasinduMshan/BookWorm-Online-library-System.git" target="_blank"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
 
         </section>
-        
+
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
