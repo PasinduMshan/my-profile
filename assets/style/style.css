@@ -7,7 +7,7 @@
 body {
     font-family: "Times New Roman", sans-serif;
     background-color: #070508;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 /*-- NavBar Styles --*/
@@ -239,7 +239,6 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-
 }
 
 #Download-cv-btn>div>button {
@@ -253,6 +252,7 @@ body {
     border: #00e5ff;
     box-shadow: 0 0 10px #00B8D4;
     transition: .5s;
+    cursor: pointer;
 }
 
 #Download-cv-btn>div>button:hover {
