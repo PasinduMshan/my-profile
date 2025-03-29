@@ -17,7 +17,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 2rem;
+    padding: 0;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 }
 
 .menu>li {
-    padding-left: 2rem;
+    padding-right: 2.5rem;
 }
 
 .menu>li>a {
@@ -78,7 +78,7 @@ body {
 
 .open-menu {
     top: 50%;
-    right: 20px;
+    right: 2.5rem;
     transform: translateY(-50%);
 }
 
@@ -295,7 +295,6 @@ body {
     width: 100vw;
 }
 
-
 #aboutMe-Bottom-Details {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -356,7 +355,6 @@ body {
     font-size: 1.563rem;
 }
 
-
 /*-- Skill Section Style --*/
 
 #skillSection {
@@ -373,13 +371,11 @@ body {
 #my-skills {
     display: flex;
     justify-content: space-around;
-
 }
 
 #my-skills>div {
     max-width: 1000px;
     margin-top: 10px;
-
 }
 
 .skills {
@@ -398,14 +394,14 @@ body {
 }
 
 .skills>div:last-child>progress {
-    width: 40vw;
+    max-width: 100%;
+    width: clamp(200px, 40vw, 600px);
     height: 2vh;
 }
 
 #my-skills-images {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
 }
 
 #my-skills-images>div {
@@ -413,15 +409,19 @@ body {
     width: 60vw;
 }
 
-#skill-img>div>div {
-    width: 80px;
-    aspect-ratio: 1/1;
-}
-
 #skill-img {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
+
+/* AOS Animations for each skill image */
+#skill-img>div:nth-child(4n+1) { animation: fadeInRight 1.5s ease-in-out; }
+#skill-img>div:nth-child(4n+2) { animation: fadeInUp 1.5s ease-in-out; }
+#skill-img>div:nth-child(4n+3) { animation: fadeInDown 1.5s ease-in-out; }
+#skill-img>div:nth-child(4n+4) { animation: fadeInLeft 1.5s ease-in-out; }
 
 #skill-img>div {
     display: flex;
@@ -429,46 +429,59 @@ body {
     justify-content: center;
 }
 
-#skill-img>div:first-child>div {
-    background-image: url("/assets/images/java-logo.png");
+#skill-img>div>div {
+    max-width: 90px;
+    width: 100%;
+    aspect-ratio: 1/1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#skill-img>div:nth-child(2)>div {
-    background-image: url("/assets/images/mysql-logo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Applying background images dynamically */
+#skill-img>div:nth-child(1)>div { background-image: url("/assets/images/java-logo.png"); }
+#skill-img>div:nth-child(2)>div { background-image: url("/assets/images/mysql-logo.png"); }
+#skill-img>div:nth-child(3)>div { background-image: url("/assets/images/HTML_logo.png"); }
+#skill-img>div:nth-child(4)>div { background-image: url("/assets/images/CSS-Logo.png"); }
+#skill-img>div:nth-child(5)>div { background-image: url("/assets/images/JavaScript-Logo.png"); }
+#skill-img>div:nth-child(6)>div { background-image: url("/assets/images/typescript.png"); }
+#skill-img>div:nth-child(7)>div { background-image: url("/assets/images/python.png"); }
+#skill-img>div:nth-child(8)>div { background-image: url("/assets/images/SpringBoot.png"); }
+#skill-img>div:nth-child(9)>div { background-image: url("/assets/images/react.png"); }
+#skill-img>div:nth-child(10)>div { background-image: url("/assets/images/reactnative.jpeg"); }
+#skill-img>div:nth-child(11)>div { background-image: url("/assets/images/Redux.png"); }
+#skill-img>div:nth-child(12)>div { background-image: url("/assets/images/node_JS.png"); }
+#skill-img>div:nth-child(13)>div { background-image: url("/assets/images/prisma.png"); }
+#skill-img>div:nth-child(14)>div { background-image: url("/assets/images/Hibernate.jpg"); }
+#skill-img>div:nth-child(15)>div { background-image: url("/assets/images/jquery.png"); }
+#skill-img>div:nth-child(16)>div { background-image: url("/assets/images/tailwind.png"); }
+#skill-img>div:nth-child(17)>div { background-image: url("/assets/images/boostrap.png"); }
+#skill-img>div:nth-child(18)>div { background-image: url("/assets/images/jwt-logo.png"); }
+#skill-img>div:nth-child(19)>div { background-image: url("/assets/images/mongoDB.png"); }
+#skill-img>div:nth-child(20)>div { background-image: url("/assets/images/vsCode.jpg"); }
+#skill-img>div:nth-child(21)>div { background-image: url("/assets/images/intellijIdea.jpg"); }
+#skill-img>div:nth-child(22)>div { background-image: url("/assets/images/postman.png"); }
+#skill-img>div:last-child>div { background-image: url("/assets/images/Github-desktop-logo.png"); }
+
+/* Keyframe animations */
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
-#skill-img>div:nth-child(3)>div {
-    background-image: url("/assets/images/HTML_logo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
-#skill-img>div:nth-child(4)>div {
-    background-image: url("/assets/images/CSS-Logo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-#skill-img>div:nth-child(5)>div {
-    background-image: url("/assets/images/JavaScript-Logo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#skill-img>div:last-child>div {
-    background-image: url("/assets/images/Github-desktop-logo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /*-- Education Section Style --*/
@@ -635,7 +648,6 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 
-
 .image-5-6-border-box {
     width: 21.875rem; /*350px*/
     height: 11.875rem; /*190px*/
@@ -680,9 +692,7 @@ body {
     background-repeat: no-repeat;
 }
 
-
 /*-- Get In Touch Section Style --*/
-
 #contactSection {
     width: 100vw;
     height: 100vh;
@@ -714,12 +724,10 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 
-
 #contact-bottom-left-Top {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
 }
-
 
 #contact-icon {
     display: flex;
@@ -832,6 +840,7 @@ footer>div {
 
 
 /* -- Project Section Fixes -- */
+
 #projectSection {
     width: 100vw;
     min-height: 100vh;
@@ -911,7 +920,6 @@ footer>div {
     box-shadow: 0 0 10px #18FFFF;
 }
 
-
 /*-- Media Query --*/
 
 @media all and (max-width: 1280px) {
@@ -965,59 +973,40 @@ footer>div {
         width: 17.5rem; /*280px*/
         height: 24.375rem; /*390px*/
     }
-    /*--- Project Section ---*/
-    /*#projectSection {*/
-    /*    height: 185vh;*/
-    /*}*/
-    /*#project-Bottom {*/
-    /*    height: calc(185vh - (8.274rem + 3.625rem));*/
-    /*    grid-template-columns: 1fr;*/
-    /*}*/
-
 }
 
 @media all and (max-width: 1230px) {
-
     /*--- Hero Section ---*/
-
     #Name-details>div {
         width: 37.5rem;
         height: 10.938rem;
     }
-
     #Name-details>div>h2 {
         font-size: 1.875rem;
     }
-
     #Name-details>div>h1 {
         font-size: 3.75rem;
     }
-
     #Social-Media-Pic>div {
         width: 37.5rem;
     }
-
     #Download-cv-btn>div {
         width: 37.5rem;
     }
-
     .liquid-shape {
         top: 10%;
     }
 
     /*--- About Me Section ---*/
-
     #aboutMePara {
         width: 31.25rem;
         height: 13.75rem;
         font-size: 1.313rem;
     }
-
     #aboutMeImageDiv {
         width: 21.875rem;
         height: 34.375rem;
     }
-
     #aboutMeImage {
         width: 20rem;
         height: 33.125rem;
@@ -1070,6 +1059,7 @@ footer>div {
         position: absolute;
         bottom: 8.5vh;
     }
+
     /*--- Contact Section ---*/
     #contact-bottom-left-Bottom>div>a {
         margin: 0 40px;
@@ -1080,9 +1070,11 @@ footer>div {
 }
 
 @media all and (max-width: 1024px) {
+    .menu>li:nth-child(5) {
+        padding-right: 5rem;
+    }
 
     /*--- Hero Section ---*/
-
     #Name-details>div {
         width: 34.063rem;
     }
@@ -1132,10 +1124,13 @@ footer>div {
     }
 
     /*--- Skill Section ---*/
-
     #skill-img {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        gap: 8px;
+    }
+
+    #skill-img > div > div {
+        max-width: 60px;
     }
 
     /*--- Gallery Section ---*/
@@ -1184,257 +1179,216 @@ footer>div {
     #contact-bottom-left-Bottom>div>a {
         margin: 0 30px;
     }
+    #contactSection {
+        height: 105vh;
+    }
 
 }
 
 @media all and (max-width: 960px)  {
 
     /*--- Hero Section ---*/
-
     #Name-details>div {
         width: 31.25rem;
     }
-
     #Name-details>div>h2 {
         font-size: 1.563rem;
     }
-
     #Name-details>div>h1 {
         font-size: 3.313rem;
     }
-
     #Name-details>div>p {
         font-size: 1.063rem;
     }
-
     #Social-Media-Pic>div {
         width: 31.25rem;
     }
-
     #Download-cv-btn>div {
         width: 31.25rem;
     }
 
     /*--- About Me Section ---*/
-
     #aboutMePara {
         width: 26.875rem;
         height: 13.75rem;
         font-size: 1.25rem;
     }
-
     #aboutMeImageDiv {
         width: 18.75rem;
         height: 30rem;
     }
-
     #aboutMeImage {
         width: 17.5rem;
         height: 28.125rem;
     }
-
     #horizontalLine {
         width: 0.938rem;
         height: 18.75rem;
     }
 
-
     /*--- Gallery Section ---*/
-
     .top-image-border-box {
         width: 14.375rem; /*230px*/
         height: 10rem; /*160px*/
     }
-
     .image {
         width: 13.125rem; /*210px*/
         height: 8.75rem; /*140px*/
     }
-
     #image-04-border-box {
         width: 10.625rem; /*170px*/
         height: 18.125rem; /*290px*/
     }
-
     #backImg04 {
         width: 9.375rem; /*150px*/
         height: 16.875rem; /*350px*/
     }
-
     .image-5-6-border-box {
         width: 11.25rem; /*180px*/
         height: 7.5rem; /*120px*/
     }
-
     .backImg-5-6 {
         width: 10rem; /*160px*/
         height: 6.25rem; /*100px*/
     }
-
     #image-07-border-box {
         width: 10.625rem; /*170px*/
         height: 18.125rem; /*290px*/
     }
-
     #backImg07 {
         width: 9.375rem; /*150px*/
         height: 16.875rem; /*350px*/
     }
-
     #image-04 {
         justify-content: center;
     }
-
     #image-07 {
         justify-content: center;
     }
 
     /*--- Contact Section ---*/
-
     #contact-bottom-left-Bottom>div>a {
         margin: 0 20px;
         width: 60px;
         height: 60px;
         font-size: 3.125rem; /*50px*/
     }
-
     #email-submit-btn>div>input {
         width: 7.5rem; /*120px*/
         height: 2.188rem; /*35px*/
         background-color: #00e5ff;
         font-size: 1rem; /*20px*/
     }
-
 }
 
 @media all and (max-width: 833px)  {
 
     /*--- Hero Section ---*/
-
     #Name-details>div {
         width: 25rem;
         height: 10rem;
         bottom: 0;
     }
-
     #Name-details>div>h2 {
         font-size: 1.5rem;
     }
-
     #Name-details>div>h1 {
         font-size: 2.5rem;
     }
-
     #Name-details>div>p {
         font-size: 0.938rem;
     }
-
     #Social-Media-Pic>div {
         width: 25rem;
     }
-
     #Download-cv-btn>div {
         width: 25rem;
     }
-
     #Social-Media-Pic>div>a {
         width: 40px;
         height: 40px;
     }
-
     #Download-cv-btn>div>button {
         width: 7.188rem;
         height: 2.5rem;
         font-size: 0.813rem;
     }
-
     #img-box>img {
         width: 300px;
     }
-
     #Hero-Main-Bottom-Left {
         grid-template-rows: 2fr .5fr 1fr;
         /*border: 2px solid red;*/
     }
 
     /*--- About Me Section ---*/
-
     #aboutMePara {
         width: 20.938rem;
         height: 9.063rem;
         font-size: 0.875rem;
         /*background-color: pink;*/
     }
-
     #aboutMeImageDiv {
         width: 14.375rem;
         height: 22.5rem;
     }
-
     #aboutMeImage {
         width: 13.125rem;
         height: 21.563rem;
     }
-
     .title {
         font-size: 2.375rem;
     }
-
     #horizontalLine {
         width: 0.625rem;
         height: 13.75rem;
     }
-
-    /*--- Assignment Section ---*/
-
-    #assignmentSection {
-        width: 100vw;
-        height: 260vh;
-    }
-
-    #assignment-Bottom {
-        height: calc(260vh - (8.274rem + 3.625rem));
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-
 }
 
 @media all and (max-width: 768px)  {
 
     /*--- Hero Section ---*/
-
     #Name-details>div {
         width: 24.063rem;
     }
-
     #Social-Media-Pic>div {
         width: 24.063rem;
     }
-
     #Download-cv-btn>div {
         width: 24.063rem;
     }
-
     #img-box>img {
         width: 270px;
     }
-
     .liquid-shape {
         top: 20%;
         width: 120%;
         height: 120%;
     }
 
-    /*--- Gallery Section ---*/
+    /*--- Skill Section ---*/
+    #skill-img {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    #skill-img > div > div {
+        max-width: 50px;
+    }
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills > div {
+        margin: 5px;
+    }
+    .skills > div:last-child > progress {
+        width: clamp(150px, 70vw, 500px);
+    }
 
+    /*--- Gallery Section ---*/
     .top-image-border-box {
         width: 11.25rem; /*180px*/
         height: 7.5rem; /*120px*/
     }
-
     .image {
         width: 10rem; /*160px*/
         height: 6.25rem; /*100px*/
@@ -1450,6 +1404,9 @@ footer>div {
         margin: 0 auto;
     }
 
+    #contactSection {
+        height: 140vh;
+    }
 }
 
 @media all and (max-width: 610px) {
@@ -1481,21 +1438,16 @@ footer>div {
         right: 0;
     }
 
-
     /*--- Hero Section ---*/
-
     #Hero-Main-Bottom {
         grid-template-columns: 1fr;
     }
-
     #Hero-Main-Bottom-Left {
         grid-row: 2/3;
     }
-
     #img-box>img {
         width: 250px;
     }
-
     .liquid-shape {
         top: 0;
         width: 70%;
@@ -1504,195 +1456,138 @@ footer>div {
         right: 0;
         margin: auto;
     }
-
     #Name-details>div {
         width: 31.25rem;
         height: 12.5rem;
     }
-
     #Name-details>div>h2 {
         font-size: 1.563rem;
     }
-
     #Name-details>div>h1 {
         font-size: 3.313rem;
     }
-
     #Name-details>div>p {
         font-size: 1.063rem;
     }
-
     #Social-Media-Pic>div {
         width: 31.25rem;
     }
-
     #Download-cv-btn>div {
         width: 31.25rem;
     }
-
     #Social-Media-Pic>div>a {
         width: 30px;
         height: 30px;
         font-size: 1.25rem;
     }
-
     #Download-cv-btn>div>button {
         width: 6.875rem;
         height: 2.188rem;
         font-size: 0.813rem;
     }
-
     #Name-details>div{
         bottom: 0;
     }
-
     #Hero-Main-Bottom-Left {
         grid-template-rows: 2fr 1fr 1fr;
         /*border: 2px solid red;*/
     }
 
     /*--- AboutMe Section ---*/
-
     #aboutMe-Bottom-Details {
         grid-template-rows: 1fr 2fr;
         /*background-color: pink;*/
     }
-
     #AboutMe-detail-left-Image {
         grid-row: 2/3;
     }
-
     #AboutMe-detail-right-Detail {
         width: 100vw;
         grid-template-columns: 1fr 3fr;
     }
-
     #aboutMePara {
         width: 23.75rem;
         height: 9.375rem;
         font-size: 0.938rem;
     }
-
     #aboutMeImageDiv {
         width: 15.625rem;
         height: 23.75rem;
     }
-
     #aboutMeImage {
         width: 14.375rem;
         height: 22.5rem;
     }
-
     #horizontalLine {
         width: 0.75rem;
         height: 13.75rem;
     }
 
-    /*--- Skill Section ---*/
-
-    .skills>div:first-child {
-        width: 100px;
-        font-size: 0.875rem;
-    }
 
     /*--- Gallery Section ---*/
-
     .top-image-border-box {
         width: 9.375rem; /*180px*/
         height: 7.5rem; /*120px*/
     }
-
     .image {
         width: 8.125rem; /*130px*/
         height: 6.25rem; /*100px*/
     }
-
     #image-04-border-box {
         width: 9.375rem; /*150px*/
         height: 21.875rem; /*350px*/
     }
-
     #backImg04 {
         width: 8.125rem; /*130px*/
         height: 20.625rem; /*330px*/
     }
-
     .image-5-6-border-box {
         width: 9.375rem; /*150px*/
         height: 7.5rem; /*120px*/
     }
-
     .backImg-5-6 {
         width: 8.125rem; /*130px*/
         height: 6.25rem; /*100px*/
     }
-
     #image-07-border-box {
         width: 9.375rem; /*150px*/
         height: 21.875rem; /*350px*/
     }
-
     #backImg07 {
         width: 8.125rem; /*130px*/
         height: 20.625rem; /*330px*/
     }
 
     /*--- Gallery Section ---*/
-
     #contactSection {
         height: 180vh;
     }
-
     #contact-bottom {
         grid-template-columns: 1fr;
     }
-
-
     #contact-bottom-left-Bottom>div>a{
         width: 80px;
         height: 80px;
         font-size: 4.063rem; /*65px*/
         margin: 0 20px;
     }
-
     #contact-bottom-left {
         grid-template-rows: 1fr 0.8fr;
     }
-
     #contact-bottom-right>div {
         margin-left: 50px;
     }
-
     .input-small-field {
         width: 70vw;
     }
-
     #message {
         width: 70vw;
 
-    }
-
-    /*--- Assignment Section ---*/
-
-    #assignmentSection {
-        width: 100vw;
-        height: 460vh;
-    }
-
-    #assignment-Bottom {
-        height: calc(460vh - (8.274rem + 3.625rem));
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .Assignment-box-Name {
-        font-size: 20px;
     }
 }
 
 @media all and (max-width: 500px) {
     /*--- NavBar ---*/
-
     .logo>a>img {
         width: 6.25rem;
     }
@@ -1702,32 +1597,25 @@ footer>div {
         width: 20.625rem;
         height: 8.125rem;
     }
-
     #Name-details>div>h2 {
         font-size: 1.25rem;
     }
-
     #Name-details>div>h1 {
         font-size: 2.188rem;
     }
-
     #Name-details>div>p {
         font-size: 0.75rem;
     }
-
     #Social-Media-Pic>div {
         width: 20.625rem;
     }
-
     #Download-cv-btn>div {
         width: 20.625rem;
     }
-
     #Social-Media-Pic>div>a {
         width: 30px;
         height: 30px;
     }
-
     #Download-cv-btn>div>button {
         width: 4.375rem;
         height: 1.25rem;
@@ -1735,67 +1623,68 @@ footer>div {
     }
 
     /*--- AboutMe Section ---*/
-
     #aboutMePara {
         width: 19.438rem;
         height: 9.813rem;
         font-size: 0.875rem;
     }
-
     #aboutMeImageDiv {
         width: 14.063rem;
         height: 22.188rem;
     }
-
     #aboutMeImage {
         width: 12.813rem;
         height: 21.25rem;
     }
-
     .title {
         font-size: 1.875rem;
     }
-
     #horizontalLine {
         width: 0.563rem;
         height: 12.5rem;
     }
 
     /*--- Gallery Section ---*/
-
     #gallery-bottom-bottom {
         display: none;
     }
-
     #gallery-bottom {
         display: grid;
         grid-template-rows: 5fr 0.2fr;
         height: calc(100vh - (8.274rem + 3.625rem));
     }
-
     #gallery-bottom-top {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     #image-01 {
         justify-content: center;
     }
-
     #image-03 {
         justify-content: center;
     }
-
     .top-image-border-box {
         width: 18.75rem; /*300px*/
         height: 12.5rem; /*200px*/
     }
-
     .image {
         width: 17.5rem; /*280px*/
         height: 11.25rem; /*180px*/
     }
+}
 
+@media (max-width: 480px) {
+    /*--- Skill Section ---*/
+    #skill-img {
+        grid-template-columns: repeat(3, 1fr);  /* 3 columns for small screens */
+        gap: 5px;
+    }
+    #skill-img > div > div {
+        max-width: 40px;
+    }
+    .skills > div:last-child > progress {
+        width: clamp(120px, 80vw, 400px);
+    }
 }
 
 @media all and (max-width: 430px) {
@@ -1803,24 +1692,35 @@ footer>div {
     #AboutMe-detail-right-Detail {
         grid-template-columns: 0.5fr 3fr;
     }
+    #img-box>img {
+        width: 170px;
+    }
+    .open-menu {
+        right: 3rem;
+    }
 
-    /*--- Skill Section ---*/
+    /*--- Gallery Section ---*/
+    .top-image-border-box {
+        margin-bottom: 1.5rem;
+        width: 17.5rem; /*280px*/
+        height: 9.375rem; /*180px*/
+    }
+    .image {
+        width: 16.25rem; /*280px*/
+        height: 8.125rem; /*180px*/
+    }
 
-    #skill-img {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    #contactSection {
+        height: 210vh;
     }
 }
 
 @media all and (max-width: 390px) {
-
     /*--- Gallery Section ---*/
-
     .top-image-border-box {
         width: 17.5rem; /*280px*/
         height: 9.375rem; /*180px*/
     }
-
     .image {
         width: 16.25rem; /*280px*/
         height: 8.125rem; /*180px*/
@@ -1834,38 +1734,32 @@ footer>div {
         height: 10rem;
         font-size: 0.875rem;
     }
-
     #aboutMeImageDiv {
         width: 11.25rem;
         height: 15.625rem;
     }
-
     #aboutMeImage {
         width: 10rem;
         height: 14.688rem;
     }
 
     /*--- Gallery Section ---*/
-
     .top-image-border-box {
         width: 17.5rem; /*280px*/
         height: 9.375rem; /*180px*/
     }
-
     .image {
         width: 16.25rem; /*280px*/
         height: 8.125rem; /*180px*/
     }
 
     /*--- Contact Section ---*/
-
     #contact-bottom-left-Bottom>div>a{
         width: 60px;
         height: 60px;
         font-size: 3.125rem; /*50px*/
         margin: 0 20px;
     }
-
 }
 
 
