@@ -280,7 +280,7 @@ body {
 .title {
     width: fit-content;
     height: fit-content;
-    font-size: 3.625rem;
+    font-size: 3rem;
     -webkit-text-stroke: 1px #00B8D4;
     margin-left: 12vw;
     text-shadow: 1px 1px 1px #00B8D4, 0 0 1em #2ca2ad, 0 0 0.1em #447275;
@@ -831,362 +831,69 @@ footer>div {
 }
 
 
-/*-- Assignment Section Style --*/
-
-#assignmentSection {
-    width: 100vw;
-    height: 185vh;
-}
-
-#assignment-Bottom {
-    height: calc(185vh - (8.274rem + 3.625rem));
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#assignment-Bottom>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Assignment-box {
-    width: 250px;
-    height: 300px;
-    border: 4px solid #00e5ff;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-}
-
-.Assignment-box:hover {
-    box-shadow:0 0 10px #18FFFF;
-    /*background-color: #37474F;*/
-    background-color: #212b30;
-}
-
-.Assignment-box-Name {
-    color: white;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#Assignment-01-Box-button {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.Assignment-box-button>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Assignment-box-button>div>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid grey;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    color: #18FFFF;
-    text-decoration: none;
-}
-
-.Assignment-box>div:nth-child(2)>div>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-02-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.Assignment-Box-Bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#assignment-03-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-03-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-.Assignment-Box-Bottom>div>a {
-    background: transparent;
-    font-size: 1.3rem;
-    color: #18FFFF;
-    text-decoration: none;
-}
-
-.Assignment-Box-Bottom>div>a:hover {
-    color: white;
-}
-
-.Assignment-Box-Bottom>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#assignment-04-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-04-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-05-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#Assignment-06-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#assignment-06-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-06-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-07-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#assignment-07-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-07-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-08-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#assignment-08-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-08-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-09-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#assignment-09-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-09-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-10-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#assignment-10-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-10-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-11-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#assignment-11-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-11-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-#Assignment-12-Box-button {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#assignment-12-git-repo>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 50%;
-}
-
-#assignment-12-git-repo>a:hover {
-    background: #006674;
-    color: #FFFFFF;
-    border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-
-/*-- Project Section Style --*/
-
+/* -- Project Section Fixes -- */
 #projectSection {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 4rem 2rem;
 }
 
 #project-Bottom {
-    height: calc(100vh - (8.274rem + 3.625rem));
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#project-Bottom>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
 
 .Project-box {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 500px;
     border: 4px solid #00e5ff;
-    display: grid;
-    grid-template-rows: 3fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    transition: 0.3s;
 }
 
-.Project-box>div {
-    /*border: 2px solid red;*/
+.Project-box:hover {
+    box-shadow: 0 0 15px #18FFFF;
+    background-color: #212b30;
 }
 
 .project-image-box {
+    width: 100%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 342px;
-    height: 295px;
+    overflow: hidden;
 }
 
-.project-image-box>img {
-    width: 342px;
-    height: 295px;
+.project-image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .project-name {
     color: white;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 
 .project-git-repo {
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+
+.project-git-repo a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.project-git-repo>div>a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     width: 50px;
     height: 50px;
     background: transparent;
@@ -1194,20 +901,14 @@ footer>div {
     border-radius: 50%;
     font-size: 1.3rem;
     color: #18FFFF;
-    text-decoration: none;
+    transition: 0.3s;
 }
 
-.project-git-repo>div>a:hover {
+.project-git-repo a:hover {
     background: #006674;
     color: #FFFFFF;
     border-color: #18FFFF;
-    box-shadow:0 0 10px #18FFFF;
-}
-
-.Project-box:hover {
-    box-shadow:0 0 10px #18FFFF;
-    /*background-color: #37474F;*/
-    background-color: #212b30;
+    box-shadow: 0 0 10px #18FFFF;
 }
 
 
@@ -1220,21 +921,17 @@ footer>div {
         height: 13.75rem;
         font-size: 1.438rem;
     }
-
     #aboutMeImageDiv {
         width: 23.75rem;
         height: 37.5rem;
     }
-
     #aboutMeImage {
         width: 21.875rem;
         height: 35.625rem;
     }
-
     .title {
         font-size: 3rem;
     }
-
     /*--- Gallery Section ---*/
     .top-image-border-box {
         width: 20rem; /*320px*/
@@ -1268,17 +965,14 @@ footer>div {
         width: 17.5rem; /*280px*/
         height: 24.375rem; /*390px*/
     }
-
     /*--- Project Section ---*/
-
-    #projectSection {
-        height: 185vh;
-    }
-
-    #project-Bottom {
-        height: calc(185vh - (8.274rem + 3.625rem));
-        grid-template-columns: 1fr;
-    }
+    /*#projectSection {*/
+    /*    height: 185vh;*/
+    /*}*/
+    /*#project-Bottom {*/
+    /*    height: calc(185vh - (8.274rem + 3.625rem));*/
+    /*    grid-template-columns: 1fr;*/
+    /*}*/
 
 }
 
@@ -1330,78 +1024,59 @@ footer>div {
     }
 
     /*--- Gallery Section ---*/
-
     .top-image-border-box {
         width: 18.75rem; /*300px*/
         height: 11.25rem; /*180px*/
     }
-
     .image {
         width: 17.5rem; /*280px*/
         height: 10rem; /*160px*/
     }
-
     #image-04-border-box {
         width: 17.5rem; /*280px*/
         height: 24.375rem; /*390px*/
     }
-
     #backImg04 {
         width: 16.25rem; /*260px*/
         height: 23.125rem; /*370px*/
     }
-
-
     .image-5-6-border-box {
         width: 17.5rem; /*280px*/
         height: 9.375rem; /*150px*/
     }
-
     .backImg-5-6 {
         width: 16.25rem; /*260px*/
         height: 8.125rem; /*130px*/
     }
-
     #image-07-border-box {
         width: 17.5rem; /*280px*/
         height: 24.375rem; /*390px*/
     }
-
     #backImg07 {
         width: 16.25rem; /*260px*/
         height: 23.125rem; /*370px*/
     }
-
     #image-05-top {
         position: relative;
     }
-
     #image-05-border-box {
         position: absolute;
         top: 8.5vh;
     }
-
     #image-06-bottom {
         position: relative;
     }
-
     #image-06-border-box {
         position: absolute;
         bottom: 8.5vh;
     }
-
-
     /*--- Contact Section ---*/
-
     #contact-bottom-left-Bottom>div>a {
         margin: 0 40px;
     }
-
     #contact-bottom-left-Top {
         grid-template-columns: 0.8fr 2fr;
     }
-
-
 }
 
 @media all and (max-width: 1024px) {
@@ -1475,8 +1150,6 @@ footer>div {
         height: 8.75rem; /*140px*/
     }
 
-
-
     #image-04-border-box {
         width: 16.25rem; /*260px*/
         height: 23.125rem; /*370px*/
@@ -1486,7 +1159,6 @@ footer>div {
         width: 15rem; /*240px*/
         height: 21.875rem; /*350px*/
     }
-
 
     .image-5-6-border-box {
         width: 16.25rem; /*260px*/
@@ -1498,7 +1170,6 @@ footer>div {
         height: 6.875rem; /*110px*/
     }
 
-
     #image-07-border-box {
         width: 16.25rem; /*260px*/
         height: 23.125rem; /*370px*/
@@ -1509,9 +1180,7 @@ footer>div {
         height: 21.875rem; /*350px*/
     }
 
-
     /*--- Contact Section ---*/
-
     #contact-bottom-left-Bottom>div>a {
         margin: 0 30px;
     }
@@ -1582,8 +1251,6 @@ footer>div {
         height: 8.75rem; /*140px*/
     }
 
-
-
     #image-04-border-box {
         width: 10.625rem; /*170px*/
         height: 18.125rem; /*290px*/
@@ -1594,8 +1261,6 @@ footer>div {
         height: 16.875rem; /*350px*/
     }
 
-
-
     .image-5-6-border-box {
         width: 11.25rem; /*180px*/
         height: 7.5rem; /*120px*/
@@ -1605,7 +1270,6 @@ footer>div {
         width: 10rem; /*160px*/
         height: 6.25rem; /*100px*/
     }
-
 
     #image-07-border-box {
         width: 10.625rem; /*170px*/
@@ -1774,6 +1438,16 @@ footer>div {
     .image {
         width: 10rem; /*160px*/
         height: 6.25rem; /*100px*/
+    }
+
+    /*--- Project Section ---*/
+    #project-Bottom {
+        grid-template-columns: 1fr;
+    }
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0 auto;
     }
 
 }
@@ -1953,7 +1627,6 @@ footer>div {
         height: 6.25rem; /*100px*/
     }
 
-
     #image-07-border-box {
         width: 9.375rem; /*150px*/
         height: 21.875rem; /*350px*/
@@ -1989,7 +1662,6 @@ footer>div {
     #contact-bottom-right>div {
         margin-left: 50px;
     }
-
 
     .input-small-field {
         width: 70vw;
